@@ -1,0 +1,290 @@
+/* Nav text links */
+.nav-link {
+  transition: color 0.25s ease;
+}
+.nav-link:hover {
+  color: var(--text);
+}
+.nav-link.is-active {
+  color: var(--text);
+}
+
+/* Primary green-gradient CTA */
+.btn-primary {
+  transition: filter 0.2s ease;
+}
+.btn-primary:hover {
+  filter: brightness(1.06);
+}
+
+/* Secondary outline CTA */
+.btn-secondary {
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.32);
+}
+
+/* "Book a consult" nav pill */
+.btn-nav-cta {
+  transition: background 0.2s ease;
+}
+.btn-nav-cta:hover {
+  background: #ffffff;
+}
+
+/* Feature / link / process cards that lift on hover */
+.card-lift {
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.35s ease;
+}
+.card-lift:hover {
+  transform: translateY(-6px);
+  border-color: rgba(158, 242, 122, 0.3);
+}
+
+/* Home stat-strip cells */
+.stat-cell {
+  transition: background 0.3s ease;
+}
+.stat-cell:hover {
+  background: #12160f;
+}
+
+/* Footer / plain text links that lighten on hover */
+.link-hover {
+  transition: color 0.25s ease;
+}
+.link-hover:hover {
+  color: var(--text);
+}
+
+/* Text inputs / textareas */
+.form-input {
+  transition: border-color 0.2s ease;
+}
+.form-input:focus {
+  border-color: rgba(158, 242, 122, 0.5);
+}
+
+/* Bright-green link hover (e.g. "Read the MRV methodology") */
+.link-accent-hover:hover {
+  color: #b4f792;
+}
+
+/* About page — team card hover reveal */
+.tv-person {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(160deg, #12160f, #0d100e);
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.35s ease;
+}
+.tv-person:hover {
+  border-color: rgba(158, 242, 122, 0.28);
+}
+.tv-av {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tv-ring {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(158, 242, 122, 0.22);
+  box-shadow: inset 0 0 0 6px rgba(9, 11, 9, 0.35);
+}
+.tv-ring span {
+  font-family: 'Fraunces', serif;
+  font-size: 30px;
+  color: #cfeab6;
+}
+.tv-plate {
+  padding: 20px 22px 22px;
+}
+.tv-name {
+  font-family: 'Fraunces', serif;
+  font-size: 21px;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.tv-person:hover .tv-name {
+  transform: translateY(-6px);
+}
+.tv-meta {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(6px);
+  transition: max-height 0.45s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease,
+    transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.tv-person:hover .tv-meta {
+  max-height: 90px;
+  opacity: 1;
+  transform: none;
+}
+
+/* Enterprise FAQ accordion row */
+.faq-row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.faq-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 4px;
+  cursor: pointer;
+}
+.faq-sign {
+  font-size: 22px;
+  color: var(--accent);
+  font-weight: 400;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.faq-a {
+  padding: 0 4px 26px;
+  max-width: 660px;
+  display: none;
+}
+.faq-row.is-open .faq-a {
+  display: block;
+}
+
+/* BookConsult time-slot chip */
+.slot-chip {
+  border-radius: 12px;
+  padding: 12px 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+}
+.slot-chip.is-selected {
+  border: 1px solid rgba(158, 242, 122, 0.6);
+  background: rgba(158, 242, 122, 0.12);
+}
+.slot-day {
+  font-size: 12px;
+  color: var(--text-dim);
+}
+.slot-time {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.submit-btn {
+  border: none;
+  padding: 15px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: 'Manrope', sans-serif;
+  transition: filter 0.2s ease;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-faint);
+  cursor: not-allowed;
+}
+.submit-btn.is-enabled {
+  background: linear-gradient(135deg, #b4f792, #1d9e75);
+  color: var(--cta-ink);
+  cursor: pointer;
+}
+.submit-btn.is-enabled:hover {
+  filter: brightness(1.06);
+}
+
+/* Mobile nav hamburger toggle */
+.tv-nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.tv-nav-toggle-bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.tv-nav-toggle.is-open .tv-nav-toggle-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.tv-nav-toggle.is-open .tv-nav-toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+.tv-nav-toggle.is-open .tv-nav-toggle-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Full-height mobile nav overlay */
+.tv-mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-8px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+.tv-mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.tv-mobile-link {
+  font-family: 'Fraunces', serif;
+  font-size: 28px;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+.tv-mobile-link-cta {
+  margin-top: 12px;
+  background: linear-gradient(135deg, #b4f792, #1d9e75);
+  color: var(--cta-ink);
+  padding: 14px 30px;
+  border-radius: 100px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Applied to <html> and <body> while the mobile menu is open */
+.tv-scroll-lock {
+  overflow: hidden;
+  height: 100%;
+}

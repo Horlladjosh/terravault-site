@@ -1,0 +1,245 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const team = [
+  { initials: 'LV', name: 'Dr. Lena Vondrák', role: 'Co-founder & CEO', meta: '18 yrs · DAC process engineering' },
+  { initials: 'MA', name: 'Marcus Adeyemi', role: 'Co-founder & CTO', meta: '20 yrs · industrial control systems' },
+  { initials: 'PN', name: 'Dr. Priya Nair', role: 'Chief Climate Scientist', meta: 'Geochemistry · basalt mineralization' },
+  { initials: 'SB', name: 'Sofia Berg', role: 'Head of Verification', meta: 'Ex-Big Four carbon assurance' },
+  { initials: 'DO', name: 'David Okonkwo', role: 'Head of Offtake', meta: '20 yrs · energy & offtake contracts' },
+  { initials: 'HS', name: 'Hana Suzuki', role: 'VP Operations', meta: 'Manufacturing scale-up · prototype to volume' },
+];
+
+const timeline = [
+  { year: '2019', title: 'Founded in Zurich', copy: 'Two process engineers and a geochemist build the first solid-sorbent prototype in a rented university lab.' },
+  { year: '2021', title: 'First pilot online', copy: 'Facility 01 begins capturing in Iceland, powered by geothermal heat and storing CO₂ in basalt.' },
+  { year: '2023', title: 'First enterprise offtake', copy: 'Isometric certification lands; a Fortune 100 buyer signs a multi-year removal agreement.' },
+  { year: '2024', title: 'Gen 3 breaks $180 / ton', copy: 'A modular redesign cuts cost per ton by 71% versus the first generation.' },
+  { year: '2025', title: '148,200 tons verified', copy: 'Four facilities operate across three continents, every ton independently verified.' },
+];
+---
+
+<BaseLayout
+  title="About — Terravault"
+  description="We're here to put carbon back where it belongs."
+  active="about"
+>
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:110px 64px 60px; text-align:center;">
+    <div
+      data-reveal
+      style="display:inline-flex; align-items:center; gap:8px; font-size:13px; color:#9ef27a; letter-spacing:0.03em; margin-bottom:26px; border:1px solid rgba(158,242,122,0.25); padding:7px 16px 7px 8px; border-radius:100px; background:rgba(158,242,122,0.06);"
+    >
+      <span
+        style="width:6px; height:6px; border-radius:50%; background:#9ef27a; box-shadow:0 0 8px #9ef27a; display:block;"
+      ></span>Our company
+    </div>
+    <h1
+      data-reveal
+      style="font-family:'Fraunces',serif; font-size:clamp(40px,6vw,66px); font-weight:500; letter-spacing:-0.02em; line-height:1.05; margin:0 auto 26px; max-width:880px;"
+    >
+      We're here to put carbon back <em style="font-style:italic; color:#9ef27a;">where it belongs</em>
+    </h1>
+    <p data-reveal style="font-size:19px; color:#a9a79d; max-width:600px; margin:0 auto;">
+      Terravault is a team of engineers, geochemists, and climate scientists building the
+      removal infrastructure the next century depends on — and holding ourselves to the
+      evidence.
+    </p>
+  </section>
+
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:20px 64px 40px;">
+    <div
+      data-reveal
+      style="position:relative; height:min(46vw,440px); border-radius:20px; overflow:hidden; border:1px solid rgba(255,255,255,0.1);"
+    >
+      <img
+        src="https://images.pexels.com/videos/30282132/view-of-hyosung-gas-processing-plant-in-phu-my-town-30282132.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        alt="Terravault facility"
+        style="width:100%; height:100%; object-fit:cover; filter:saturate(0.85) brightness(0.66);"
+        onerror="this.style.display='none'"
+      />
+      <div style="position:absolute; inset:0; background:linear-gradient(180deg,rgba(9,11,9,0.15) 30%,rgba(9,11,9,0.85) 100%);"></div>
+      <div style="position:absolute; bottom:28px; left:32px; max-width:520px;">
+        <div style="font-family:'Fraunces',serif; font-style:italic; font-size:clamp(18px,2.4vw,24px); color:#f4f2ec; line-height:1.4;">
+          Founded in Zurich in 2019. Four facilities today. One mission that hasn't changed.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tv-container" style="max-width:980px; margin:0 auto; padding:60px 64px;">
+    <div data-reveal style="border-left:2px solid rgba(158,242,122,0.4); padding-left:36px;">
+      <p style="font-family:'Fraunces',serif; font-size:clamp(22px,3vw,30px); line-height:1.45; letter-spacing:-0.01em; color:#e5e3db;">
+        Getting to net zero isn't only about emitting less. Hundreds of gigatons of legacy
+        CO&#8322; are already in the air. <span style="color:#9ef27a;">Someone has to take it
+        back out — permanently, measurably, and at a price the world can afford.</span> That's
+        the work we chose.
+      </p>
+    </div>
+  </section>
+
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:60px 64px;">
+    <div data-reveal style="max-width:640px; margin-bottom:48px;">
+      <div style="font-size:13px; color:#9ef27a; letter-spacing:0.05em; margin-bottom:14px; font-weight:600;">
+        Our story
+      </div>
+      <h2 style="font-family:'Fraunces',serif; font-size:clamp(28px,3.6vw,38px); font-weight:500; letter-spacing:-0.01em;">
+        From a lab bench to a fleet
+      </h2>
+    </div>
+    <div data-reveal style="display:flex; flex-direction:column;">
+      {
+        timeline.map((t, i) => (
+          <div
+            class="tv-timeline-row"
+            style={`display:grid; grid-template-columns:130px 1fr; gap:32px; align-items:start; padding:24px 0; border-top:1px solid rgba(255,255,255,0.08);${i === timeline.length - 1 ? ' border-bottom:1px solid rgba(255,255,255,0.08);' : ''}`}
+          >
+            <div style="font-family:'Fraunces',serif; font-size:26px; color:#9ef27a;">{t.year}</div>
+            <div>
+              <h3 style="font-size:17px; font-weight:700; margin-bottom:6px;">{t.title}</h3>
+              <p style="color:#918f86; font-size:14.5px; max-width:620px;">{t.copy}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:40px 64px;">
+    <div
+      data-reveal
+      style="position:relative; height:min(44vw,400px); border-radius:20px; overflow:hidden; border:1px solid rgba(255,255,255,0.1);"
+    >
+      <img
+        src="https://images.pexels.com/photos/2569842/pexels-photo-2569842.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        alt="Terravault process hall"
+        style="width:100%; height:100%; object-fit:cover; filter:saturate(0.82) brightness(0.6);"
+        onerror="this.style.display='none'"
+      />
+      <div
+        style="position:absolute; inset:0; background:linear-gradient(180deg,rgba(9,11,9,0.2) 20%,rgba(9,11,9,0.8) 100%), linear-gradient(90deg,rgba(9,11,9,0.55) 0%,transparent 55%);"
+      >
+      </div>
+      <div style="position:absolute; bottom:28px; left:32px; max-width:480px;">
+        <div style="font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em; color:#9ef27a; margin-bottom:8px;">
+          Inside the plant
+        </div>
+        <div style="font-family:'Fraunces',serif; font-size:clamp(18px,2.2vw,24px); color:#f4f2ec; line-height:1.35;">
+          Boring, repeatable engineering — running around the clock.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:60px 64px;">
+    <div data-reveal style="max-width:640px; margin-bottom:48px;">
+      <div style="font-size:13px; color:#9ef27a; letter-spacing:0.05em; margin-bottom:14px; font-weight:600;">
+        What we believe
+      </div>
+      <h2 style="font-family:'Fraunces',serif; font-size:clamp(28px,3.6vw,38px); font-weight:500; letter-spacing:-0.01em;">
+        Principles we build by
+      </h2>
+    </div>
+    <div data-reveal class="tv-grid-3" style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
+      <div style="border:1px solid rgba(255,255,255,0.08); border-radius:16px; background:linear-gradient(160deg,#12160f,#0d100e); padding:32px;">
+        <h3 style="font-size:18px; font-weight:700; margin-bottom:12px;">Evidence over vibes</h3>
+        <p style="color:#918f86; font-size:14.5px;">If a ton can't be measured and independently verified, we don't sell it. Our credibility is the product.</p>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,0.08); border-radius:16px; background:linear-gradient(160deg,#12160f,#0d100e); padding:32px;">
+        <h3 style="font-size:18px; font-weight:700; margin-bottom:12px;">Permanence, not paperwork</h3>
+        <p style="color:#918f86; font-size:14.5px;">We store carbon as rock. Not trees that can burn, not credits that can double-count. Removal that stays removed.</p>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,0.08); border-radius:16px; background:linear-gradient(160deg,#12160f,#0d100e); padding:32px;">
+        <h3 style="font-size:18px; font-weight:700; margin-bottom:12px;">Scale is the only mercy</h3>
+        <p style="color:#918f86; font-size:14.5px;">A boutique climate solution isn't a solution. Every design decision is judged against gigaton-scale deployment.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:40px 64px 20px;">
+    <div
+      data-reveal
+      style="border:1px solid rgba(255,255,255,0.08); border-radius:20px; background:linear-gradient(160deg,#0f130d,#0b0d0b); padding:44px 40px;"
+    >
+      <div style="max-width:520px; margin-bottom:36px;">
+        <div style="font-size:13px; color:#9ef27a; letter-spacing:0.05em; margin-bottom:14px; font-weight:600;">
+          Success so far
+        </div>
+        <h2 style="font-family:'Fraunces',serif; font-size:clamp(24px,3vw,32px); font-weight:500; letter-spacing:-0.01em;">
+          Proof, not projections
+        </h2>
+      </div>
+      <div class="tv-grid-4" style="display:grid; grid-template-columns:repeat(4,1fr); gap:36px;">
+        <div><div style="font-family:'Fraunces',serif; font-size:38px; color:#9ef27a;">148K</div><div style="font-size:13.5px; color:#918f86; margin-top:6px;">Tons verified in 2025</div></div>
+        <div><div style="font-family:'Fraunces',serif; font-size:38px; color:#9ef27a;">14</div><div style="font-size:13.5px; color:#918f86; margin-top:6px;">Enterprise offtake partners</div></div>
+        <div><div style="font-family:'Fraunces',serif; font-size:38px; color:#9ef27a;">71%</div><div style="font-size:13.5px; color:#918f86; margin-top:6px;">Cost cut since Gen 1</div></div>
+        <div><div style="font-family:'Fraunces',serif; font-size:38px; color:#9ef27a;">$210M</div><div style="font-size:13.5px; color:#918f86; margin-top:6px;">Raised to scale the fleet</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:80px 64px 40px;">
+    <div data-reveal style="max-width:640px; margin-bottom:20px;">
+      <div style="font-size:13px; color:#9ef27a; letter-spacing:0.05em; margin-bottom:14px; font-weight:600;">
+        Leadership
+      </div>
+      <h2 style="font-family:'Fraunces',serif; font-size:clamp(28px,3.6vw,38px); font-weight:500; letter-spacing:-0.01em;">
+        The people behind the numbers
+      </h2>
+    </div>
+    <div style="font-size:12.5px; color:#6b6960; margin-bottom:36px;">
+      Monogram avatars — hover any card to reveal role and background.
+    </div>
+    <div data-reveal class="tv-grid-3" style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px;">
+      {
+        team.map((p) => (
+          <div class="tv-person">
+            <div class="tv-av">
+              <div class="tv-ring">
+                <span>{p.initials}</span>
+              </div>
+            </div>
+            <div class="tv-plate">
+              <div class="tv-name">{p.name}</div>
+              <div class="tv-meta">
+                <div style="color:#9ef27a; font-size:13px; font-weight:600; margin-top:8px;">{p.role}</div>
+                <div style="color:#c8c6bd; font-size:13px; margin-top:4px;">{p.meta}</div>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:80px 64px 100px;">
+    <div
+      data-reveal
+      class="tv-split"
+      style="border:1px solid rgba(255,255,255,0.08); border-radius:24px; background:radial-gradient(ellipse 80% 100% at 80% 0%, rgba(158,242,122,0.08), transparent 60%), linear-gradient(160deg,#12160f,#0b0d0b); padding:56px; display:grid; grid-template-columns:1.3fr 1fr; gap:48px; align-items:center;"
+    >
+      <div>
+        <div style="font-size:13px; color:#9ef27a; letter-spacing:0.05em; margin-bottom:14px; font-weight:600;">
+          Careers
+        </div>
+        <h2 style="font-family:'Fraunces',serif; font-size:clamp(26px,3.4vw,36px); font-weight:500; letter-spacing:-0.01em; margin-bottom:16px;">
+          Come build the removal century
+        </h2>
+        <p style="color:#a9a79d; font-size:16px; margin-bottom:28px; max-width:440px;">
+          We hire people who want the hardest version of the climate problem. If that's you, we
+          should talk.
+        </p>
+        <a
+          href="#"
+          class="btn-primary"
+          style="display:inline-block; background:linear-gradient(135deg,#b4f792,#1d9e75); color:#06210f; padding:14px 26px; border-radius:100px; font-weight:700; font-size:14.5px;"
+          >View open roles</a
+        >
+      </div>
+      <div style="display:flex; flex-direction:column; gap:0;">
+        <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 0; border-bottom:1px solid rgba(255,255,255,0.08);"><div><div style="font-weight:600; font-size:15px;">Process Engineer, Gen 4</div><div style="font-size:12.5px; color:#6b6960;">Zurich · Full-time</div></div><span style="color:#9ef27a; font-size:18px;">→</span></div>
+        <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 0; border-bottom:1px solid rgba(255,255,255,0.08);"><div><div style="font-weight:600; font-size:15px;">MRV Data Scientist</div><div style="font-size:12.5px; color:#6b6960;">Remote · Full-time</div></div><span style="color:#9ef27a; font-size:18px;">→</span></div>
+        <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 0;"><div><div style="font-weight:600; font-size:15px;">Offtake Partnerships Lead</div><div style="font-size:12.5px; color:#6b6960;">New York · Full-time</div></div><span style="color:#9ef27a; font-size:18px;">→</span></div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

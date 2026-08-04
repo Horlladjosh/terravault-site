@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Manrope', -apple-system, sans-serif; background: #090b09; color: #f4f2ec; line-height: 1.5; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  input, textarea { font-family: inherit; }
+  ::selection { background: rgba(158,242,122,0.25); }
+</style>
+</helmet>
+<div style="background:#090b09; color:#f4f2ec; font-family:'Manrope',sans-serif;">
+
+  <nav style="display:flex; justify-content:space-between; align-items:center; padding:20px 64px; position:sticky; top:0; z-index:50; background:rgba(9,11,9,0.72); backdrop-filter:blur(14px); border-bottom:1px solid rgba(255,255,255,0.07);">
+    <a href="Home.dc.html" style="display:flex; align-items:center; gap:11px; font-size:18px; font-weight:700; letter-spacing:-0.02em;"><span style="width:24px; height:24px; border-radius:7px; background:linear-gradient(135deg,#9ef27a,#1d9e75 60%,#0b3d2c); display:block;"></span>Terravault</a>
+    <div style="display:flex; gap:36px; font-size:14px; color:#a9a79d;">
+      <a href="Technology.dc.html" style="transition:color .25s ease;" style-hover="color:#f4f2ec;">Technology</a>
+      <a href="Enterprise.dc.html" style="color:#f4f2ec;">For enterprise</a>
+      <a href="About.dc.html" style="transition:color .25s ease;" style-hover="color:#f4f2ec;">Company</a>
+    </div>
+    <a href="BookConsult.dc.html" style="background:#f4f2ec; color:#090b09; padding:10px 20px; border-radius:100px; font-size:13.5px; font-weight:700; transition:background .2s ease;" style-hover="background:#ffffff;">Book a consult</a>
+  </nav>
+
+  <section style="max-width:1160px; margin:0 auto; padding:96px 64px 40px;">
+    <div data-reveal style="max-width:760px;">
+      <div style="display:inline-flex; align-items:center; gap:8px; font-size:13px; color:#9ef27a; letter-spacing:0.03em; margin-bottom:24px; border:1px solid rgba(158,242,122,0.25); padding:7px 16px 7px 8px; border-radius:100px; background:rgba(158,242,122,0.06);"><span style="width:6px; height:6px; border-radius:50%; background:#9ef27a; box-shadow:0 0 8px #9ef27a; display:block;"></span>For enterprise buyers</div>
+      <h1 style="font-family:'Fraunces',serif; font-size:clamp(38px,5.4vw,60px); font-weight:500; letter-spacing:-0.02em; line-height:1.06; margin-bottom:24px;">Offtake removals you can <em style="font-style:italic; color:#9ef27a;">put in a filing</em></h1>
+      <p style="font-size:18px; color:#a9a79d; max-width:600px; margin-bottom:36px;">Multi-year removal agreements for corporate net-zero commitments — with the methodology, permanence, and audit trail your CFO and your auditors will both accept.</p>
+      <div style="display:flex; gap:14px; flex-wrap:wrap;">
+        <a href="#contact" style="background:linear-gradient(135deg,#b4f792,#1d9e75); color:#06210f; padding:15px 28px; border-radius:100px; font-weight:700; font-size:15px; transition:filter .2s ease;" style-hover="filter:brightness(1.06);">Start an offtake conversation</a>
+        <a href="#process" style="border:1px solid rgba(255,255,255,0.16); padding:15px 28px; border-radius:100px; font-weight:600; font-size:15px; color:#f4f2ec; transition:background .2s ease,border-color .2s ease;" style-hover="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.32);">See how evaluation works</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1160px; margin:0 auto; padding:40px 64px;">
+    <div data-reveal style="position:relative; height:min(44vw,400px); border-radius:20px; overflow:hidden; border:1px solid rgba(255,255,255,0.1);">
+      <img src="https://images.pexels.com/videos/30282132/view-of-hyosung-gas-processing-plant-in-phu-my-town-30282132.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Operating Terravault facility" style="width:100%; height:100%; object-fit:cover; filter:saturate(0.85) brightness(0.64);" onerror="this.style.display='none'">
+      <div style="position:absolute; inset:0; background:linear-gradient(180deg,rgba(9,11,9,0.15) 25%,rgba(9,11,9,0.82) 100%), linear-gradient(90deg,rgba(9,11,9,0.5) 0%,transparent 50%);"></div>
+      <div style="position:absolute; bottom:28px; left:32px; max-width:520px;">
+        <div style="font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em; color:#9ef27a; margin-bottom:8px;">Operating today</div>
+        <div style="font-family:'Fraunces',serif; font-size:clamp(18px,2.2vw,26px); color:#f4f2ec; line-height:1.35;">Four facilities delivering verified removal — not a roadmap.</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1160px; margin:0 auto; padding:60px 64px;">
+    <div data-reveal style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
+      <div style="border:1px solid rgba(255,255,255,0.08); border-radius:16px; background:linear-gradient(160deg,#12160f,#0d100e); padding:32px;">
+        <div style="width:40px; height:40px; border-radius:11px; background:rgba(158,242,122,0.1); display:flex; align-items:center; justify-content:center; font-size:20px; margin-bottom:20px;">◇</div>
+        <h3 style="font-size:18px; font-weight:700; margin-bottom:10px;">Durable, not avoided</h3>
+        <p style="color:#918f86; font-size:14.5px;">Every ton is physically removed and mineralized — not an avoidance credit. Permanence measured in millennia, not accounting years.</p>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,0.08); border-radius:16px; background:linear-gradient(160deg,#12160f,#0d100e); padding:32px;">
+        <div style="width:40px; height:40px; border-radius:11px; background:rgba(158,242,122,0.1); display:flex; align-items:center; justify-content:center; font-size:20px; margin-bottom:20px;">▤</div>
+        <h3 style="font-size:18px; font-weight:700; margin-bottom:10px;">Audit-ready data</h3>
+        <p style="color:#918f86; font-size:14.5px;">Continuous MRV, third-party certification, and a per-ton ledger your sustainability team can hand straight to assurance.</p>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,0.08); border-radius:16px; background:linear-gradient(160deg,#12160f,#0d100e); padding:32px;">
+        <div style="width:40px; height:40px; border-radius:11px; background:rgba(158,242,122,0.1); display:flex; align-items:center; justify-content:center; font-size:20px; margin-bottom:20px;">◷</div>
+        <h3 style="font-size:18px; font-weight:700; margin-bottom:10px;">Delivery you can plan around</h3>
+        <p style="color:#918f86; font-size:14.5px;">Contracted volumes with scheduled delivery windows, quarterly retirement reports, and pricing locked for the term.</p>
+      </div>
+    </div>
+  </section>
+
+  <div data-reveal style="padding:52px 64px; border-top:1px solid rgba(255,255,255,0.07); border-bottom:1px solid rgba(255,255,255,0.07);">
+    <div style="text-align:center; font-size:12.5px; color:#918f86; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:30px;">Trusted by sustainability teams at</div>
+    <div style="display:flex; justify-content:center; gap:60px; color:#6b6960; font-size:15px; font-weight:700; flex-wrap:wrap;"><span>Northbridge Capital</span><span>Meridian</span><span>Atlas Cloud</span><span>Vanta Foods</span><span>Helio Air</span></div>
+  </div>
+
+  <section id="process" style="max-width:1160px; margin:0 auto; padding:80px 64px 60px;">
+    <div data-reveal style="max-width:640px; margin-bottom:56px;">
+      <div style="font-size:13px; color:#9ef27a; letter-spacing:0.05em; margin-bottom:14px; font-weight:600;">The evaluation process</div>
+      <h2 style="font-family:'Fraunces',serif; font-size:clamp(28px,3.6vw,38px); font-weight:500; letter-spacing:-0.01em; margin-bottom:14px;">From first call to first ton delivered</h2>
+      <p style="color:#a9a79d; font-size:16px;">A structured path built for procurement and sustainability teams evaluating a multi-year commitment.</p>
+    </div>
+    <div data-reveal style="display:flex; flex-direction:column; gap:0;">
+      <div style="display:grid; grid-template-columns:120px 1fr auto; gap:32px; align-items:start; padding:28px 0; border-top:1px solid rgba(255,255,255,0.08);">
+        <div style="font-family:'Fraunces',serif; font-size:28px; color:#9ef27a;">01</div>
+        <div><h3 style="font-size:19px; font-weight:700; margin-bottom:8px;">Intro &amp; scoping call</h3><p style="color:#918f86; font-size:14.5px; max-width:560px;">We align on your target volume, timeline, and reporting standards, and confirm whether durable removal fits your net-zero roadmap.</p></div>
+        <div style="font-size:12.5px; color:#6b6960; white-space:nowrap;">~1 week</div>
+      </div>
+      <div style="display:grid; grid-template-columns:120px 1fr auto; gap:32px; align-items:start; padding:28px 0; border-top:1px solid rgba(255,255,255,0.08);">
+        <div style="font-family:'Fraunces',serif; font-size:28px; color:#9ef27a;">02</div>
+        <div><h3 style="font-size:19px; font-weight:700; margin-bottom:8px;">Data room &amp; diligence</h3><p style="color:#918f86; font-size:14.5px; max-width:560px;">Under NDA, your team reviews our full MRV methodology, certification records, facility specs, and lifecycle assessment.</p></div>
+        <div style="font-size:12.5px; color:#6b6960; white-space:nowrap;">2–3 weeks</div>
+      </div>
+      <div style="display:grid; grid-template-columns:120px 1fr auto; gap:32px; align-items:start; padding:28px 0; border-top:1px solid rgba(255,255,255,0.08);">
+        <div style="font-family:'Fraunces',serif; font-size:28px; color:#9ef27a;">03</div>
+        <div><h3 style="font-size:19px; font-weight:700; margin-bottom:8px;">Term sheet</h3><p style="color:#918f86; font-size:14.5px; max-width:560px;">We propose volume, delivery schedule, price, and permanence guarantees. You review with procurement and legal.</p></div>
+        <div style="font-size:12.5px; color:#6b6960; white-space:nowrap;">2 weeks</div>
+      </div>
+      <div style="display:grid; grid-template-columns:120px 1fr auto; gap:32px; align-items:start; padding:28px 0; border-top:1px solid rgba(255,255,255,0.08);">
+        <div style="font-family:'Fraunces',serif; font-size:28px; color:#9ef27a;">04</div>
+        <div><h3 style="font-size:19px; font-weight:700; margin-bottom:8px;">Contract &amp; delivery</h3><p style="color:#918f86; font-size:14.5px; max-width:560px;">Removal begins against your schedule. You receive quarterly retirement reports and a live per-ton ledger for assurance.</p></div>
+        <div style="font-size:12.5px; color:#6b6960; white-space:nowrap;">Ongoing</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1160px; margin:0 auto; padding:60px 64px;">
+    <div data-reveal style="border:1px solid rgba(255,255,255,0.08); border-radius:20px; background:linear-gradient(160deg,#0f130d,#0b0d0b); padding:44px 40px;">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px;">
+        <div>
+          <div style="font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em; color:#9ef27a; margin-bottom:20px;">Every offtake includes</div>
+          <div style="display:flex; flex-direction:column; gap:14px;">
+            <div style="display:flex; gap:12px;"><span style="color:#9ef27a;">✓</span><span style="font-size:14.5px; color:#c8c6bd;">Contracted volume with locked pricing for the term</span></div>
+            <div style="display:flex; gap:12px;"><span style="color:#9ef27a;">✓</span><span style="font-size:14.5px; color:#c8c6bd;">Third-party certified, serialized removal credits</span></div>
+            <div style="display:flex; gap:12px;"><span style="color:#9ef27a;">✓</span><span style="font-size:14.5px; color:#c8c6bd;">Quarterly retirement &amp; MRV reporting</span></div>
+            <div style="display:flex; gap:12px;"><span style="color:#9ef27a;">✓</span><span style="font-size:14.5px; color:#c8c6bd;">Live per-ton ledger access for your auditors</span></div>
+            <div style="display:flex; gap:12px;"><span style="color:#9ef27a;">✓</span><span style="font-size:14.5px; color:#c8c6bd;">Named account &amp; sustainability-team support</span></div>
+          </div>
+        </div>
+        <div style="border-left:1px solid rgba(255,255,255,0.08); padding-left:40px;">
+          <div style="font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em; color:#918f86; margin-bottom:20px;">Typical engagement</div>
+          <div style="display:flex; flex-direction:column; gap:22px;">
+            <div><div style="font-family:'Fraunces',serif; font-size:28px; color:#f4f2ec;">5,000–100,000 t</div><div style="font-size:13.5px; color:#918f86; margin-top:4px;">Annual contracted volume</div></div>
+            <div><div style="font-family:'Fraunces',serif; font-size:28px; color:#f4f2ec;">3–10 yr</div><div style="font-size:13.5px; color:#918f86; margin-top:4px;">Agreement term</div></div>
+            <div><div style="font-family:'Fraunces',serif; font-size:28px; color:#9ef27a;">Custom</div><div style="font-size:13.5px; color:#918f86; margin-top:4px;">Pricing by volume, term &amp; delivery schedule</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:900px; margin:0 auto; padding:80px 64px 40px;">
+    <div data-reveal style="margin-bottom:40px;">
+      <div style="font-size:13px; color:#9ef27a; letter-spacing:0.05em; margin-bottom:14px; font-weight:600;">Frequently asked</div>
+      <h2 style="font-family:'Fraunces',serif; font-size:clamp(28px,3.6vw,38px); font-weight:500; letter-spacing:-0.01em;">Questions buyers ask us</h2>
+    </div>
+    <div data-reveal style="border-top:1px solid rgba(255,255,255,0.08);">
+      <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="5">
+        <div style="border-bottom:1px solid rgba(255,255,255,0.08);">
+          <div onClick="{{ f.toggle }}" style="display:flex; justify-content:space-between; align-items:center; gap:24px; padding:24px 4px; cursor:pointer;">
+            <span style="font-size:17px; font-weight:600; color:#f4f2ec;">{{ f.q }}</span>
+            <span style="font-size:22px; color:#9ef27a; font-weight:400; flex-shrink:0; line-height:1;">{{ f.sign }}</span>
+          </div>
+          <sc-if value="{{ f.isOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="padding:0 4px 26px; max-width:660px;"><p style="color:#a9a79d; font-size:15px; line-height:1.6;">{{ f.a }}</p></div>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="max-width:1160px; margin:0 auto; padding:40px 64px;">
+    <div data-reveal style="position:relative; height:min(42vw,380px); border-radius:20px; overflow:hidden; border:1px solid rgba(255,255,255,0.1);">
+      <img src="https://images.pexels.com/photos/29248902/pexels-photo-29248902.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Metering hardware" style="width:100%; height:100%; object-fit:cover; filter:saturate(0.8) brightness(0.62);" onerror="this.style.display='none'">
+      <div style="position:absolute; inset:0; background:linear-gradient(180deg,rgba(9,11,9,0.18) 25%,rgba(9,11,9,0.82) 100%), linear-gradient(90deg,rgba(9,11,9,0.5) 0%,transparent 52%);"></div>
+      <div style="position:absolute; bottom:28px; left:32px; max-width:520px;">
+        <div style="font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em; color:#9ef27a; margin-bottom:8px;">Audit-ready</div>
+        <div style="font-family:'Fraunces',serif; font-size:clamp(18px,2.2vw,26px); color:#f4f2ec; line-height:1.35;">Metered at every point CO&#8322; moves — the ledger your auditor will accept.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="max-width:1160px; margin:0 auto; padding:80px 64px 100px;">
+    <div data-reveal style="border:1px solid rgba(255,255,255,0.08); border-radius:24px; background:radial-gradient(ellipse 80% 100% at 20% 0%, rgba(158,242,122,0.08), transparent 60%), linear-gradient(160deg,#12160f,#0b0d0b); padding:56px; display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;">
+      <div>
+        <h2 style="font-family:'Fraunces',serif; font-size:clamp(28px,3.6vw,38px); font-weight:500; letter-spacing:-0.01em; margin-bottom:16px;">Talk to our offtake team</h2>
+        <p style="color:#a9a79d; font-size:16px; margin-bottom:28px;">Tell us your target volume and timeline. We'll follow up within two business days to schedule a scoping call and open the data room.</p>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div style="display:flex; gap:12px; align-items:center; font-size:14.5px; color:#c8c6bd;"><span style="color:#9ef27a;">→</span>offtake@terravault.example</div>
+          <div style="display:flex; gap:12px; align-items:center; font-size:14.5px; color:#c8c6bd;"><span style="color:#9ef27a;">→</span>Response within 2 business days</div>
+          <div style="display:flex; gap:12px; align-items:center; font-size:14.5px; color:#c8c6bd;"><span style="color:#9ef27a;">→</span>Data room access under mutual NDA</div>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:14px;">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+          <input placeholder="Full name" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:14px 16px; color:#f4f2ec; font-size:14.5px; outline:none; transition:border-color .2s ease;" style-focus="border-color:rgba(158,242,122,0.5);">
+          <input placeholder="Company" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:14px 16px; color:#f4f2ec; font-size:14.5px; outline:none; transition:border-color .2s ease;" style-focus="border-color:rgba(158,242,122,0.5);">
+        </div>
+        <input placeholder="Work email" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:14px 16px; color:#f4f2ec; font-size:14.5px; outline:none; transition:border-color .2s ease;" style-focus="border-color:rgba(158,242,122,0.5);">
+        <input placeholder="Target annual volume (tons)" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:14px 16px; color:#f4f2ec; font-size:14.5px; outline:none; transition:border-color .2s ease;" style-focus="border-color:rgba(158,242,122,0.5);">
+        <textarea placeholder="Timeline &amp; reporting standards" rows="3" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:14px 16px; color:#f4f2ec; font-size:14.5px; outline:none; resize:vertical; transition:border-color .2s ease;" style-focus="border-color:rgba(158,242,122,0.5);"></textarea>
+        <button style="background:linear-gradient(135deg,#b4f792,#1d9e75); color:#06210f; border:none; padding:15px; border-radius:100px; font-weight:700; font-size:15px; cursor:pointer; font-family:'Manrope'; transition:filter .2s ease;" style-hover="filter:brightness(1.06);">Request a scoping call</button>
+      </div>
+    </div>
+  </section>
+
+  <footer style="border-top:1px solid rgba(255,255,255,0.07); padding:64px 64px 40px;">
+    <div style="display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:32px; max-width:1160px; margin:0 auto 48px;">
+      <div>
+        <div style="display:flex; align-items:center; gap:11px; font-size:18px; font-weight:700; letter-spacing:-0.02em; margin-bottom:14px;"><span style="width:24px; height:24px; border-radius:7px; background:linear-gradient(135deg,#9ef27a,#1d9e75 60%,#0b3d2c); display:block;"></span>Terravault</div>
+        <p style="color:#6b6960; font-size:13.5px; max-width:240px;">Permanent carbon removal, engineered for enterprises that need to defend every ton.</p>
+      </div>
+      <div><div style="font-size:12px; text-transform:uppercase; letter-spacing:0.08em; color:#918f86; margin-bottom:16px;">Product</div><div style="display:flex; flex-direction:column; gap:10px; font-size:14px; color:#a9a79d;"><a href="Technology.dc.html" style-hover="color:#f4f2ec;">Technology</a><a href="Enterprise.dc.html" style-hover="color:#f4f2ec;">For enterprise</a><a href="Enterprise.dc.html" style-hover="color:#f4f2ec;">Offtake terms</a></div></div>
+      <div><div style="font-size:12px; text-transform:uppercase; letter-spacing:0.08em; color:#918f86; margin-bottom:16px;">Company</div><div style="display:flex; flex-direction:column; gap:10px; font-size:14px; color:#a9a79d;"><a href="About.dc.html" style-hover="color:#f4f2ec;">About</a><a href="About.dc.html" style-hover="color:#f4f2ec;">Careers</a><a href="BookConsult.dc.html" style-hover="color:#f4f2ec;">Contact</a></div></div>
+      <div><div style="font-size:12px; text-transform:uppercase; letter-spacing:0.08em; color:#918f86; margin-bottom:16px;">Resources</div><div style="display:flex; flex-direction:column; gap:10px; font-size:14px; color:#a9a79d;"><a href="MRV.dc.html" style-hover="color:#f4f2ec;">MRV methodology</a><a href="DataRoom.dc.html" style-hover="color:#f4f2ec;">Data room</a><a href="VerificationReport.dc.html" style-hover="color:#f4f2ec;">Verification report</a></div></div>
+    </div>
+    <div style="display:flex; justify-content:space-between; max-width:1160px; margin:0 auto; padding-top:28px; border-top:1px solid rgba(255,255,255,0.07); color:#6b6960; font-size:13px; flex-wrap:wrap; gap:12px;">
+      <span>Terravault, Inc. — concept design, not an active company</span>
+      <span>© 2026 · All rights reserved</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { open: 0 };
+  componentDidMount() {
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this._reduce = reduce || !('IntersectionObserver' in window);
+    if (this._reduce) return;
+    const els = Array.from(document.querySelectorAll('[data-reveal]'));
+    els.forEach(el => {
+      if (el.dataset.revealed) return;
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(28px)';
+      el.style.transition = 'opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1)';
+    });
+    this._io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'none';
+          e.target.dataset.revealed = '1';
+          this._io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
+    els.forEach(el => this._io.observe(el));
+  }
+  renderVals() {
+    const items = [
+      { q: 'Are these avoidance offsets or durable removals?', a: 'Durable removals. Every ton is physically extracted from the atmosphere and mineralized into stable carbonate rock — there is no avoidance or forestry component. Permanence is measured in millennia, not accounting years.' },
+      { q: 'How is each ton verified?', a: 'CO\u2082 is metered continuously at both the capture and injection points. An independent auditor reconciles the two, subtracts full lifecycle emissions, and certifies credits only against net durable removal under the Isometric and Puro.earth protocols.' },
+      { q: 'What does pricing depend on?', a: 'Price is set per engagement based on contracted volume, agreement term, and delivery schedule. Larger, longer commitments lock in lower per-ton pricing. We share indicative pricing during the scoping call and firm terms in the term sheet.' },
+      { q: 'Can we use these credits in regulatory and voluntary reporting?', a: 'Yes. Credits are third-party certified, serialized, and 45Q-eligible, with a lifecycle assessment conformant to ISO 14064-2 — suitable for both voluntary net-zero claims and regulated disclosure regimes.' },
+      { q: 'What happens if a facility underdelivers?', a: 'Contracts include delivery guarantees and a shortfall mechanism drawing on fleet-wide capacity and a reserve buffer, so your contracted volume is protected even if a single facility runs below nameplate.' },
+      { q: 'How quickly can an agreement start delivering?', a: 'For available fleet capacity, delivery can begin the quarter after contract signing. New dedicated capacity is scheduled against your ramp and confirmed in the term sheet.' }
+    ];
+    const faqs = items.map((f, i) => ({
+      q: f.q,
+      a: f.a,
+      isOpen: this.state.open === i,
+      sign: this.state.open === i ? '\u2212' : '+',
+      toggle: () => this.setState(s => ({ open: s.open === i ? -1 : i }))
+    }));
+    return { faqs };
+  }
+}
+</script>
+</body>
+</html>

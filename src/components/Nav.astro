@@ -1,0 +1,101 @@
+---
+interface Props {
+  active?: 'technology' | 'enterprise' | 'about';
+}
+const { active } = Astro.props;
+---
+
+<nav
+  class="tv-nav"
+  style="display:flex; justify-content:space-between; align-items:center; padding:20px 64px; position:sticky; top:0; z-index:50; background:rgba(9,11,9,0.72); backdrop-filter:blur(14px); border-bottom:1px solid rgba(255,255,255,0.07);"
+>
+  <a
+    href="/"
+    style="display:flex; align-items:center; gap:11px; font-size:18px; font-weight:700; letter-spacing:-0.02em;"
+  >
+    <span
+      style="width:24px; height:24px; border-radius:7px; background:linear-gradient(135deg,#9ef27a,#1d9e75 60%,#0b3d2c); display:block;"
+    ></span>Terravault
+  </a>
+  <div class="tv-nav-links" style="display:flex; gap:36px; font-size:14px; color:#a9a79d;">
+    <a
+      href="/technology"
+      class:list={['nav-link', { 'is-active': active === 'technology' }]}
+      style={active === 'technology' ? 'color:#f4f2ec;' : undefined}>Technology</a
+    >
+    <a
+      href="/enterprise"
+      class:list={['nav-link', { 'is-active': active === 'enterprise' }]}
+      style={active === 'enterprise' ? 'color:#f4f2ec;' : undefined}>For enterprise</a
+    >
+    <a
+      href="/about"
+      class:list={['nav-link', { 'is-active': active === 'about' }]}
+      style={active === 'about' ? 'color:#f4f2ec;' : undefined}>Company</a
+    >
+  </div>
+  <a
+    href="/book-consult"
+    class="btn-nav-cta tv-nav-cta-desktop"
+    style="background:#f4f2ec; color:#090b09; padding:10px 20px; border-radius:100px; font-size:13.5px; font-weight:700;"
+    >Book a consult</a
+  >
+  <button
+    type="button"
+    class="tv-nav-toggle"
+    aria-label="Open menu"
+    aria-expanded="false"
+    aria-controls="tv-mobile-menu"
+  >
+    <span class="tv-nav-toggle-bar"></span>
+    <span class="tv-nav-toggle-bar"></span>
+    <span class="tv-nav-toggle-bar"></span>
+  </button>
+</nav>
+
+<div id="tv-mobile-menu" class="tv-mobile-menu" aria-hidden="true">
+  <a href="/technology" class="tv-mobile-link">Technology</a>
+  <a href="/enterprise" class="tv-mobile-link">For enterprise</a>
+  <a href="/about" class="tv-mobile-link">Company</a>
+  <a href="/book-consult" class="tv-mobile-link tv-mobile-link-cta">Book a consult</a>
+</div>
+
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>('.tv-nav-toggle');
+  const menu = document.getElementById('tv-mobile-menu');
+  const menuLinks = menu ? menu.querySelectorAll('a') : [];
+
+  function openMenu() {
+    if (!toggle || !menu) return;
+    menu.classList.add('is-open');
+    toggle.classList.add('is-open');
+    toggle.setAttribute('aria-expanded', 'true');
+    menu.setAttribute('aria-hidden', 'false');
+    document.documentElement.classList.add('tv-scroll-lock');
+    document.body.classList.add('tv-scroll-lock');
+  }
+
+  function closeMenu() {
+    if (!toggle || !menu) return;
+    menu.classList.remove('is-open');
+    toggle.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    menu.setAttribute('aria-hidden', 'true');
+    document.documentElement.classList.remove('tv-scroll-lock');
+    document.body.classList.remove('tv-scroll-lock');
+  }
+
+  toggle?.addEventListener('click', () => {
+    if (menu?.classList.contains('is-open')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  menuLinks.forEach((link) => link.addEventListener('click', closeMenu));
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
+  });
+</script>

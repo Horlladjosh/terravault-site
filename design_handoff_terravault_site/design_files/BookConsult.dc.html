@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Manrope', -apple-system, sans-serif; background: #090b09; color: #f4f2ec; line-height: 1.5; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  input, textarea, select, button { font-family: inherit; }
+  ::selection { background: rgba(158,242,122,0.25); }
+</style>
+</helmet>
+<div style="background:#090b09; color:#f4f2ec; font-family:'Manrope',sans-serif;">
+
+  <nav style="display:flex; justify-content:space-between; align-items:center; padding:20px 64px; position:sticky; top:0; z-index:50; background:rgba(9,11,9,0.72); backdrop-filter:blur(14px); border-bottom:1px solid rgba(255,255,255,0.07);">
+    <a href="Home.dc.html" style="display:flex; align-items:center; gap:11px; font-size:18px; font-weight:700; letter-spacing:-0.02em;"><span style="width:24px; height:24px; border-radius:7px; background:linear-gradient(135deg,#9ef27a,#1d9e75 60%,#0b3d2c); display:block;"></span>Terravault</a>
+    <div style="display:flex; gap:36px; font-size:14px; color:#a9a79d;">
+      <a href="Technology.dc.html" style="transition:color .25s ease;" style-hover="color:#f4f2ec;">Technology</a>
+      <a href="Enterprise.dc.html" style="transition:color .25s ease;" style-hover="color:#f4f2ec;">For enterprise</a>
+      <a href="About.dc.html" style="transition:color .25s ease;" style-hover="color:#f4f2ec;">Company</a>
+    </div>
+    <a href="BookConsult.dc.html" style="background:#f4f2ec; color:#090b09; padding:10px 20px; border-radius:100px; font-size:13.5px; font-weight:700; transition:background .2s ease;" style-hover="background:#ffffff;">Book a consult</a>
+  </nav>
+
+  <section style="max-width:1160px; margin:0 auto; padding:88px 64px 40px;">
+    <div data-reveal style="max-width:720px;">
+      <div style="display:inline-flex; align-items:center; gap:8px; font-size:13px; color:#9ef27a; letter-spacing:0.03em; margin-bottom:22px; border:1px solid rgba(158,242,122,0.25); padding:7px 16px 7px 8px; border-radius:100px; background:rgba(158,242,122,0.06);"><span style="width:6px; height:6px; border-radius:50%; background:#9ef27a; box-shadow:0 0 8px #9ef27a; display:block;"></span>Book a consult</div>
+      <h1 style="font-family:'Fraunces',serif; font-size:clamp(38px,5.4vw,58px); font-weight:500; letter-spacing:-0.02em; line-height:1.06; margin-bottom:22px;">Let's talk about <em style="font-style:italic; color:#9ef27a;">your removal target</em></h1>
+      <p style="font-size:18px; color:#a9a79d; max-width:600px;">A 30-minute call with our offtake team. Pick a time and tell us what you're evaluating — we'll come prepared with numbers, not a pitch.</p>
+    </div>
+  </section>
+
+  <section style="max-width:1160px; margin:0 auto; padding:20px 64px 100px;">
+    <div data-reveal style="display:grid; grid-template-columns:0.9fr 1.1fr; gap:24px; align-items:start;">
+
+      <div style="border:1px solid rgba(255,255,255,0.08); border-radius:20px; background:linear-gradient(160deg,#12160f,#0b0d0b); padding:40px;">
+        <div style="font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em; color:#9ef27a; margin-bottom:22px;">What to expect</div>
+        <div style="display:flex; flex-direction:column; gap:22px; margin-bottom:32px;">
+          <div style="display:flex; gap:14px;"><span style="font-family:'Fraunces',serif; color:#9ef27a; font-size:20px;">01</span><div><div style="font-size:15.5px; font-weight:600; margin-bottom:4px;">Scoping, not selling</div><p style="color:#918f86; font-size:14px;">We align on your target volume, timeline, and reporting standards.</p></div></div>
+          <div style="display:flex; gap:14px;"><span style="font-family:'Fraunces',serif; color:#9ef27a; font-size:20px;">02</span><div><div style="font-size:15.5px; font-weight:600; margin-bottom:4px;">The real numbers</div><p style="color:#918f86; font-size:14px;">Indicative pricing, the 0.87 net ratio, and how our MRV holds up in diligence.</p></div></div>
+          <div style="display:flex; gap:14px;"><span style="font-family:'Fraunces',serif; color:#9ef27a; font-size:20px;">03</span><div><div style="font-size:15.5px; font-weight:600; margin-bottom:4px;">A clear next step</div><p style="color:#918f86; font-size:14px;">If it's a fit, we open the data room under NDA within a day.</p></div></div>
+        </div>
+        <div style="padding-top:24px; border-top:1px solid rgba(255,255,255,0.08); display:flex; flex-direction:column; gap:12px;">
+          <div style="display:flex; gap:10px; align-items:center; font-size:14px; color:#c8c6bd;"><span style="color:#9ef27a;">→</span>offtake@terravault.example</div>
+          <div style="display:flex; gap:10px; align-items:center; font-size:14px; color:#c8c6bd;"><span style="color:#9ef27a;">→</span>Prefer email? Reply anytime, we answer in 2 business days.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid rgba(255,255,255,0.08); border-radius:20px; background:linear-gradient(160deg,#0f130d,#0b0d0b); padding:40px;">
+        <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+          <div style="text-align:center; padding:40px 12px;">
+            <div style="width:56px; height:56px; border-radius:50%; background:rgba(158,242,122,0.12); display:flex; align-items:center; justify-content:center; margin:0 auto 22px; color:#9ef27a; font-size:26px;">✓</div>
+            <h2 style="font-family:'Fraunces',serif; font-size:26px; font-weight:500; margin-bottom:12px;">Request sent</h2>
+            <p style="color:#a9a79d; font-size:15px; max-width:360px; margin:0 auto;">Thanks — we've pencilled in <span style="color:#9ef27a;">{{ selDay }} at {{ selTime }}</span>. You'll get a calendar invite and a short confirmation by email shortly.</p>
+          </div>
+        </sc-if>
+        <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+          <div>
+            <div style="font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em; color:#918f86; margin-bottom:16px;">Pick a time (30 min · your timezone)</div>
+            <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-bottom:28px;">
+              <sc-for list="{{ slots }}" as="s" hint-placeholder-count="9">
+                <div onClick="{{ s.pick }}" style="{{ s.chipStyle }}">
+                  <div style="font-size:12px; color:#918f86;">{{ s.day }}</div>
+                  <div style="font-size:15px; font-weight:700; margin-top:2px;">{{ s.time }}</div>
+                </div>
+              </sc-for>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:14px;">
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+                <input placeholder="Full name" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:14px 16px; color:#f4f2ec; font-size:14.5px; outline:none; transition:border-color .2s ease;" style-focus="border-color:rgba(158,242,122,0.5);">
+                <input placeholder="Company" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:14px 16px; color:#f4f2ec; font-size:14.5px; outline:none; transition:border-color .2s ease;" style-focus="border-color:rgba(158,242,122,0.5);">
+              </div>
+              <input placeholder="Work email" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:14px 16px; color:#f4f2ec; font-size:14.5px; outline:none; transition:border-color .2s ease;" style-focus="border-color:rgba(158,242,122,0.5);">
+              <textarea placeholder="What are you evaluating? (target volume, timeline)" rows="3" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:14px 16px; color:#f4f2ec; font-size:14.5px; outline:none; resize:vertical; transition:border-color .2s ease;" style-focus="border-color:rgba(158,242,122,0.5);"></textarea>
+              <button onClick="{{ submit }}" style="{{ submitStyle }}">{{ submitLabel }}</button>
+              <div style="font-size:12px; color:#6b6960; text-align:center;">Uses a placeholder scheduler — drop in your Calendly or HubSpot embed here.</div>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+  </section>
+
+  <footer style="border-top:1px solid rgba(255,255,255,0.07); padding:64px 64px 40px;">
+    <div style="display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:32px; max-width:1160px; margin:0 auto 48px;">
+      <div>
+        <div style="display:flex; align-items:center; gap:11px; font-size:18px; font-weight:700; letter-spacing:-0.02em; margin-bottom:14px;"><span style="width:24px; height:24px; border-radius:7px; background:linear-gradient(135deg,#9ef27a,#1d9e75 60%,#0b3d2c); display:block;"></span>Terravault</div>
+        <p style="color:#6b6960; font-size:13.5px; max-width:240px;">Permanent carbon removal, engineered for enterprises that need to defend every ton.</p>
+      </div>
+      <div><div style="font-size:12px; text-transform:uppercase; letter-spacing:0.08em; color:#918f86; margin-bottom:16px;">Product</div><div style="display:flex; flex-direction:column; gap:10px; font-size:14px; color:#a9a79d;"><a href="Technology.dc.html" style-hover="color:#f4f2ec;">Technology</a><a href="Enterprise.dc.html" style-hover="color:#f4f2ec;">For enterprise</a><a href="Enterprise.dc.html" style-hover="color:#f4f2ec;">Offtake terms</a></div></div>
+      <div><div style="font-size:12px; text-transform:uppercase; letter-spacing:0.08em; color:#918f86; margin-bottom:16px;">Company</div><div style="display:flex; flex-direction:column; gap:10px; font-size:14px; color:#a9a79d;"><a href="About.dc.html" style-hover="color:#f4f2ec;">About</a><a href="About.dc.html" style-hover="color:#f4f2ec;">Careers</a><a href="BookConsult.dc.html" style-hover="color:#f4f2ec;">Contact</a></div></div>
+      <div><div style="font-size:12px; text-transform:uppercase; letter-spacing:0.08em; color:#918f86; margin-bottom:16px;">Resources</div><div style="display:flex; flex-direction:column; gap:10px; font-size:14px; color:#a9a79d;"><a href="MRV.dc.html" style-hover="color:#f4f2ec;">MRV methodology</a><a href="DataRoom.dc.html" style-hover="color:#f4f2ec;">Data room</a><a href="VerificationReport.dc.html" style-hover="color:#f4f2ec;">Verification report</a></div></div>
+    </div>
+    <div style="display:flex; justify-content:space-between; max-width:1160px; margin:0 auto; padding-top:28px; border-top:1px solid rgba(255,255,255,0.07); color:#6b6960; font-size:13px; flex-wrap:wrap; gap:12px;">
+      <span>Terravault, Inc. — concept design, not an active company</span>
+      <span>© 2026 · All rights reserved</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { slot: null, submitted: false };
+  componentDidMount() {
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const els = Array.from(document.querySelectorAll('[data-reveal]'));
+    if (reduce || !('IntersectionObserver' in window)) return;
+    els.forEach(el => { el.style.opacity='0'; el.style.transform='translateY(28px)'; el.style.transition='opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1)'; });
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity='1'; e.target.style.transform='none'; io.unobserve(e.target); } });
+    }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
+    els.forEach(el => io.observe(el));
+  }
+  renderVals() {
+    const raw = [
+      ['Tue 12 Aug','10:00'],['Tue 12 Aug','13:30'],['Tue 12 Aug','16:00'],
+      ['Wed 13 Aug','09:30'],['Wed 13 Aug','12:00'],['Wed 13 Aug','15:30'],
+      ['Thu 14 Aug','11:00'],['Thu 14 Aug','14:00'],['Thu 14 Aug','16:30']
+    ];
+    const base = 'border-radius:12px; padding:12px 10px; text-align:center; cursor:pointer; transition:border-color .2s ease, background .2s ease;';
+    const slots = raw.map((s, i) => {
+      const on = this.state.slot === i;
+      return {
+        day: s[0], time: s[1],
+        chipStyle: base + (on
+          ? ' border:1px solid rgba(158,242,122,0.6); background:rgba(158,242,122,0.12);'
+          : ' border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.03);'),
+        pick: () => this.setState({ slot: i })
+      };
+    });
+    const hasSel = this.state.slot != null;
+    const sel = hasSel ? raw[this.state.slot] : ['',''];
+    const canSubmit = hasSel;
+    return {
+      slots,
+      submitted: this.state.submitted,
+      notSubmitted: !this.state.submitted,
+      selDay: sel[0], selTime: sel[1],
+      submitLabel: hasSel ? 'Confirm ' + sel[0] + ' · ' + sel[1] : 'Select a time above',
+      submitStyle: 'border:none; padding:15px; border-radius:100px; font-weight:700; font-size:15px; font-family:Manrope; transition:filter .2s ease;' + (canSubmit
+        ? ' background:linear-gradient(135deg,#b4f792,#1d9e75); color:#06210f; cursor:pointer;'
+        : ' background:rgba(255,255,255,0.08); color:#6b6960; cursor:not-allowed;'),
+      submit: () => { if (this.state.slot != null) this.setState({ submitted: true }); }
+    };
+  }
+}
+</script>
+</body>
+</html>

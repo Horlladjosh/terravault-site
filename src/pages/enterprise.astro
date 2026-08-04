@@ -1,0 +1,308 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const faqs = [
+  {
+    q: 'Are these avoidance offsets or durable removals?',
+    a: 'Durable removals. Every ton is physically extracted from the atmosphere and mineralized into stable carbonate rock — there is no avoidance or forestry component. Permanence is measured in millennia, not accounting years.',
+  },
+  {
+    q: 'How is each ton verified?',
+    a: 'CO₂ is metered continuously at both the capture and injection points. An independent auditor reconciles the two, subtracts full lifecycle emissions, and certifies credits only against net durable removal under the Isometric and Puro.earth protocols.',
+  },
+  {
+    q: 'What does pricing depend on?',
+    a: 'Price is set per engagement based on contracted volume, agreement term, and delivery schedule. Larger, longer commitments lock in lower per-ton pricing. We share indicative pricing during the scoping call and firm terms in the term sheet.',
+  },
+  {
+    q: 'Can we use these credits in regulatory and voluntary reporting?',
+    a: 'Yes. Credits are third-party certified, serialized, and 45Q-eligible, with a lifecycle assessment conformant to ISO 14064-2 — suitable for both voluntary net-zero claims and regulated disclosure regimes.',
+  },
+  {
+    q: 'What happens if a facility underdelivers?',
+    a: 'Contracts include delivery guarantees and a shortfall mechanism drawing on fleet-wide capacity and a reserve buffer, so your contracted volume is protected even if a single facility runs below nameplate.',
+  },
+  {
+    q: 'How quickly can an agreement start delivering?',
+    a: 'For available fleet capacity, delivery can begin the quarter after contract signing. New dedicated capacity is scheduled against your ramp and confirmed in the term sheet.',
+  },
+];
+---
+
+<BaseLayout
+  title="For enterprise — Terravault"
+  description="Offtake removals you can put in a filing."
+  active="enterprise"
+>
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:96px 64px 40px;">
+    <div data-reveal style="max-width:760px;">
+      <div
+        style="display:inline-flex; align-items:center; gap:8px; font-size:13px; color:#9ef27a; letter-spacing:0.03em; margin-bottom:24px; border:1px solid rgba(158,242,122,0.25); padding:7px 16px 7px 8px; border-radius:100px; background:rgba(158,242,122,0.06);"
+      >
+        <span
+          style="width:6px; height:6px; border-radius:50%; background:#9ef27a; box-shadow:0 0 8px #9ef27a; display:block;"
+        ></span>For enterprise buyers
+      </div>
+      <h1
+        style="font-family:'Fraunces',serif; font-size:clamp(38px,5.4vw,60px); font-weight:500; letter-spacing:-0.02em; line-height:1.06; margin-bottom:24px;"
+      >
+        Offtake removals you can <em style="font-style:italic; color:#9ef27a;">put in a filing</em>
+      </h1>
+      <p style="font-size:18px; color:#a9a79d; max-width:600px; margin-bottom:36px;">
+        Multi-year removal agreements for corporate net-zero commitments — with the
+        methodology, permanence, and audit trail your CFO and your auditors will both accept.
+      </p>
+      <div style="display:flex; gap:14px; flex-wrap:wrap;">
+        <a
+          href="#contact"
+          class="btn-primary"
+          style="background:linear-gradient(135deg,#b4f792,#1d9e75); color:#06210f; padding:15px 28px; border-radius:100px; font-weight:700; font-size:15px;"
+          >Start an offtake conversation</a
+        >
+        <a
+          href="#process"
+          class="btn-secondary"
+          style="border:1px solid rgba(255,255,255,0.16); padding:15px 28px; border-radius:100px; font-weight:600; font-size:15px; color:#f4f2ec;"
+          >See how evaluation works</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:40px 64px;">
+    <div
+      data-reveal
+      style="position:relative; height:min(44vw,400px); border-radius:20px; overflow:hidden; border:1px solid rgba(255,255,255,0.1);"
+    >
+      <img
+        src="https://images.pexels.com/videos/30282132/view-of-hyosung-gas-processing-plant-in-phu-my-town-30282132.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        alt="Operating Terravault facility"
+        style="width:100%; height:100%; object-fit:cover; filter:saturate(0.85) brightness(0.64);"
+        onerror="this.style.display='none'"
+      />
+      <div
+        style="position:absolute; inset:0; background:linear-gradient(180deg,rgba(9,11,9,0.15) 25%,rgba(9,11,9,0.82) 100%), linear-gradient(90deg,rgba(9,11,9,0.5) 0%,transparent 50%);"
+      >
+      </div>
+      <div style="position:absolute; bottom:28px; left:32px; max-width:520px;">
+        <div style="font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em; color:#9ef27a; margin-bottom:8px;">
+          Operating today
+        </div>
+        <div style="font-family:'Fraunces',serif; font-size:clamp(18px,2.2vw,26px); color:#f4f2ec; line-height:1.35;">
+          Four facilities delivering verified removal — not a roadmap.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:60px 64px;">
+    <div data-reveal class="tv-grid-3" style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
+      <div style="border:1px solid rgba(255,255,255,0.08); border-radius:16px; background:linear-gradient(160deg,#12160f,#0d100e); padding:32px;">
+        <div style="width:40px; height:40px; border-radius:11px; background:rgba(158,242,122,0.1); display:flex; align-items:center; justify-content:center; font-size:20px; margin-bottom:20px;">◇</div>
+        <h3 style="font-size:18px; font-weight:700; margin-bottom:10px;">Durable, not avoided</h3>
+        <p style="color:#918f86; font-size:14.5px;">Every ton is physically removed and mineralized — not an avoidance credit. Permanence measured in millennia, not accounting years.</p>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,0.08); border-radius:16px; background:linear-gradient(160deg,#12160f,#0d100e); padding:32px;">
+        <div style="width:40px; height:40px; border-radius:11px; background:rgba(158,242,122,0.1); display:flex; align-items:center; justify-content:center; font-size:20px; margin-bottom:20px;">▤</div>
+        <h3 style="font-size:18px; font-weight:700; margin-bottom:10px;">Audit-ready data</h3>
+        <p style="color:#918f86; font-size:14.5px;">Continuous MRV, third-party certification, and a per-ton ledger your sustainability team can hand straight to assurance.</p>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,0.08); border-radius:16px; background:linear-gradient(160deg,#12160f,#0d100e); padding:32px;">
+        <div style="width:40px; height:40px; border-radius:11px; background:rgba(158,242,122,0.1); display:flex; align-items:center; justify-content:center; font-size:20px; margin-bottom:20px;">◷</div>
+        <h3 style="font-size:18px; font-weight:700; margin-bottom:10px;">Delivery you can plan around</h3>
+        <p style="color:#918f86; font-size:14.5px;">Contracted volumes with scheduled delivery windows, quarterly retirement reports, and pricing locked for the term.</p>
+      </div>
+    </div>
+  </section>
+
+  <div
+    data-reveal
+    class="tv-container"
+    style="padding:52px 64px; border-top:1px solid rgba(255,255,255,0.07); border-bottom:1px solid rgba(255,255,255,0.07);"
+  >
+    <div style="text-align:center; font-size:12.5px; color:#918f86; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:30px;">
+      Trusted by sustainability teams at
+    </div>
+    <div style="display:flex; justify-content:center; gap:60px; color:#6b6960; font-size:15px; font-weight:700; flex-wrap:wrap;">
+      <span>Northbridge Capital</span><span>Meridian</span><span>Atlas Cloud</span><span>Vanta Foods</span><span>Helio Air</span>
+    </div>
+  </div>
+
+  <section id="process" class="tv-container" style="max-width:1280px; margin:0 auto; padding:80px 64px 60px;">
+    <div data-reveal style="max-width:640px; margin-bottom:56px;">
+      <div style="font-size:13px; color:#9ef27a; letter-spacing:0.05em; margin-bottom:14px; font-weight:600;">
+        The evaluation process
+      </div>
+      <h2 style="font-family:'Fraunces',serif; font-size:clamp(28px,3.6vw,38px); font-weight:500; letter-spacing:-0.01em; margin-bottom:14px;">
+        From first call to first ton delivered
+      </h2>
+      <p style="color:#a9a79d; font-size:16px;">
+        A structured path built for procurement and sustainability teams evaluating a
+        multi-year commitment.
+      </p>
+    </div>
+    <div data-reveal style="display:flex; flex-direction:column; gap:0;">
+      <div class="tv-timeline-row" style="display:grid; grid-template-columns:120px 1fr auto; gap:32px; align-items:start; padding:28px 0; border-top:1px solid rgba(255,255,255,0.08);">
+        <div style="font-family:'Fraunces',serif; font-size:28px; color:#9ef27a;">01</div>
+        <div><h3 style="font-size:19px; font-weight:700; margin-bottom:8px;">Intro &amp; scoping call</h3><p style="color:#918f86; font-size:14.5px; max-width:560px;">We align on your target volume, timeline, and reporting standards, and confirm whether durable removal fits your net-zero roadmap.</p></div>
+        <div class="tv-timeline-meta" style="font-size:12.5px; color:#6b6960; white-space:nowrap;">~1 week</div>
+      </div>
+      <div class="tv-timeline-row" style="display:grid; grid-template-columns:120px 1fr auto; gap:32px; align-items:start; padding:28px 0; border-top:1px solid rgba(255,255,255,0.08);">
+        <div style="font-family:'Fraunces',serif; font-size:28px; color:#9ef27a;">02</div>
+        <div><h3 style="font-size:19px; font-weight:700; margin-bottom:8px;">Data room &amp; diligence</h3><p style="color:#918f86; font-size:14.5px; max-width:560px;">Under NDA, your team reviews our full MRV methodology, certification records, facility specs, and lifecycle assessment.</p></div>
+        <div class="tv-timeline-meta" style="font-size:12.5px; color:#6b6960; white-space:nowrap;">2–3 weeks</div>
+      </div>
+      <div class="tv-timeline-row" style="display:grid; grid-template-columns:120px 1fr auto; gap:32px; align-items:start; padding:28px 0; border-top:1px solid rgba(255,255,255,0.08);">
+        <div style="font-family:'Fraunces',serif; font-size:28px; color:#9ef27a;">03</div>
+        <div><h3 style="font-size:19px; font-weight:700; margin-bottom:8px;">Term sheet</h3><p style="color:#918f86; font-size:14.5px; max-width:560px;">We propose volume, delivery schedule, price, and permanence guarantees. You review with procurement and legal.</p></div>
+        <div class="tv-timeline-meta" style="font-size:12.5px; color:#6b6960; white-space:nowrap;">2 weeks</div>
+      </div>
+      <div class="tv-timeline-row" style="display:grid; grid-template-columns:120px 1fr auto; gap:32px; align-items:start; padding:28px 0; border-top:1px solid rgba(255,255,255,0.08);">
+        <div style="font-family:'Fraunces',serif; font-size:28px; color:#9ef27a;">04</div>
+        <div><h3 style="font-size:19px; font-weight:700; margin-bottom:8px;">Contract &amp; delivery</h3><p style="color:#918f86; font-size:14.5px; max-width:560px;">Removal begins against your schedule. You receive quarterly retirement reports and a live per-ton ledger for assurance.</p></div>
+        <div class="tv-timeline-meta" style="font-size:12.5px; color:#6b6960; white-space:nowrap;">Ongoing</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:60px 64px;">
+    <div
+      data-reveal
+      style="border:1px solid rgba(255,255,255,0.08); border-radius:20px; background:linear-gradient(160deg,#0f130d,#0b0d0b); padding:44px 40px;"
+    >
+      <div class="tv-split" style="display:grid; grid-template-columns:1fr 1fr; gap:40px;">
+        <div>
+          <div style="font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em; color:#9ef27a; margin-bottom:20px;">
+            Every offtake includes
+          </div>
+          <div style="display:flex; flex-direction:column; gap:14px;">
+            <div style="display:flex; gap:12px;"><span style="color:#9ef27a;">✓</span><span style="font-size:14.5px; color:#c8c6bd;">Contracted volume with locked pricing for the term</span></div>
+            <div style="display:flex; gap:12px;"><span style="color:#9ef27a;">✓</span><span style="font-size:14.5px; color:#c8c6bd;">Third-party certified, serialized removal credits</span></div>
+            <div style="display:flex; gap:12px;"><span style="color:#9ef27a;">✓</span><span style="font-size:14.5px; color:#c8c6bd;">Quarterly retirement &amp; MRV reporting</span></div>
+            <div style="display:flex; gap:12px;"><span style="color:#9ef27a;">✓</span><span style="font-size:14.5px; color:#c8c6bd;">Live per-ton ledger access for your auditors</span></div>
+            <div style="display:flex; gap:12px;"><span style="color:#9ef27a;">✓</span><span style="font-size:14.5px; color:#c8c6bd;">Named account &amp; sustainability-team support</span></div>
+          </div>
+        </div>
+        <div class="tv-split-divider" style="border-left:1px solid rgba(255,255,255,0.08); padding-left:40px;">
+          <div style="font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em; color:#918f86; margin-bottom:20px;">
+            Typical engagement
+          </div>
+          <div style="display:flex; flex-direction:column; gap:22px;">
+            <div><div style="font-family:'Fraunces',serif; font-size:28px; color:#f4f2ec;">5,000–100,000 t</div><div style="font-size:13.5px; color:#918f86; margin-top:4px;">Annual contracted volume</div></div>
+            <div><div style="font-family:'Fraunces',serif; font-size:28px; color:#f4f2ec;">3–10 yr</div><div style="font-size:13.5px; color:#918f86; margin-top:4px;">Agreement term</div></div>
+            <div><div style="font-family:'Fraunces',serif; font-size:28px; color:#9ef27a;">Custom</div><div style="font-size:13.5px; color:#918f86; margin-top:4px;">Pricing by volume, term &amp; delivery schedule</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tv-container" style="max-width:900px; margin:0 auto; padding:80px 64px 40px;">
+    <div data-reveal style="margin-bottom:40px;">
+      <div style="font-size:13px; color:#9ef27a; letter-spacing:0.05em; margin-bottom:14px; font-weight:600;">
+        Frequently asked
+      </div>
+      <h2 style="font-family:'Fraunces',serif; font-size:clamp(28px,3.6vw,38px); font-weight:500; letter-spacing:-0.01em;">
+        Questions buyers ask us
+      </h2>
+    </div>
+    <div data-reveal style="border-top:1px solid rgba(255,255,255,0.08);">
+      {
+        faqs.map((f, i) => (
+          <div class:list={['faq-row', { 'is-open': i === 0 }]} data-faq-row>
+            <div class="faq-q" data-faq-toggle>
+              <span style="font-size:17px; font-weight:600; color:#f4f2ec;">{f.q}</span>
+              <span class="faq-sign">{i === 0 ? '−' : '+'}</span>
+            </div>
+            <div class="faq-a">
+              <p style="color:#a9a79d; font-size:15px; line-height:1.6;">{f.a}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:40px 64px;">
+    <div
+      data-reveal
+      style="position:relative; height:min(42vw,380px); border-radius:20px; overflow:hidden; border:1px solid rgba(255,255,255,0.1);"
+    >
+      <img
+        src="https://images.pexels.com/photos/29248902/pexels-photo-29248902.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        alt="Metering hardware"
+        style="width:100%; height:100%; object-fit:cover; filter:saturate(0.8) brightness(0.62);"
+        onerror="this.style.display='none'"
+      />
+      <div
+        style="position:absolute; inset:0; background:linear-gradient(180deg,rgba(9,11,9,0.18) 25%,rgba(9,11,9,0.82) 100%), linear-gradient(90deg,rgba(9,11,9,0.5) 0%,transparent 52%);"
+      >
+      </div>
+      <div style="position:absolute; bottom:28px; left:32px; max-width:520px;">
+        <div style="font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em; color:#9ef27a; margin-bottom:8px;">
+          Audit-ready
+        </div>
+        <div style="font-family:'Fraunces',serif; font-size:clamp(18px,2.2vw,26px); color:#f4f2ec; line-height:1.35;">
+          Metered at every point CO&#8322; moves — the ledger your auditor will accept.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="tv-container" style="max-width:1280px; margin:0 auto; padding:80px 64px 100px;">
+    <div
+      data-reveal
+      class="tv-split"
+      style="border:1px solid rgba(255,255,255,0.08); border-radius:24px; background:radial-gradient(ellipse 80% 100% at 20% 0%, rgba(158,242,122,0.08), transparent 60%), linear-gradient(160deg,#12160f,#0b0d0b); padding:56px; display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;"
+    >
+      <div>
+        <h2 style="font-family:'Fraunces',serif; font-size:clamp(28px,3.6vw,38px); font-weight:500; letter-spacing:-0.01em; margin-bottom:16px;">
+          Talk to our offtake team
+        </h2>
+        <p style="color:#a9a79d; font-size:16px; margin-bottom:28px;">
+          Tell us your target volume and timeline. We'll follow up within two business days to
+          schedule a scoping call and open the data room.
+        </p>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div style="display:flex; gap:12px; align-items:center; font-size:14.5px; color:#c8c6bd;"><span style="color:#9ef27a;">→</span>offtake@terravault.example</div>
+          <div style="display:flex; gap:12px; align-items:center; font-size:14.5px; color:#c8c6bd;"><span style="color:#9ef27a;">→</span>Response within 2 business days</div>
+          <div style="display:flex; gap:12px; align-items:center; font-size:14.5px; color:#c8c6bd;"><span style="color:#9ef27a;">→</span>Data room access under mutual NDA</div>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:14px;">
+        <div class="tv-split" style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+          <input class="form-input" placeholder="Full name" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:14px 16px; color:#f4f2ec; font-size:14.5px; outline:none;" />
+          <input class="form-input" placeholder="Company" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:14px 16px; color:#f4f2ec; font-size:14.5px; outline:none;" />
+        </div>
+        <input class="form-input" placeholder="Work email" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:14px 16px; color:#f4f2ec; font-size:14.5px; outline:none;" />
+        <input class="form-input" placeholder="Target annual volume (tons)" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:14px 16px; color:#f4f2ec; font-size:14.5px; outline:none;" />
+        <textarea class="form-input" placeholder="Timeline &amp; reporting standards" rows="3" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:14px 16px; color:#f4f2ec; font-size:14.5px; outline:none; resize:vertical;"></textarea>
+        <button
+          type="button"
+          class="btn-primary"
+          style="background:linear-gradient(135deg,#b4f792,#1d9e75); color:#06210f; border:none; padding:15px; border-radius:100px; font-weight:700; font-size:15px; cursor:pointer; font-family:'Manrope';"
+          >Request a scoping call</button
+        >
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const rows = document.querySelectorAll('[data-faq-row]');
+    rows.forEach((row) => {
+      row.querySelector('[data-faq-toggle]')?.addEventListener('click', () => {
+        const wasOpen = row.classList.contains('is-open');
+        rows.forEach((r) => {
+          r.classList.remove('is-open');
+          const sign = r.querySelector('.faq-sign');
+          if (sign) sign.textContent = '+';
+        });
+        if (!wasOpen) {
+          row.classList.add('is-open');
+          const sign = row.querySelector('.faq-sign');
+          if (sign) sign.textContent = '−';
+        }
+      });
+    });
+  </script>
+</BaseLayout>

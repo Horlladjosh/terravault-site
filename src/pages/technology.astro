@@ -1,0 +1,351 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Technology — Terravault"
+  description="Solid-sorbent direct air capture, measured molecule by molecule."
+  active="technology"
+>
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:96px 64px 40px; text-align:center;">
+    <div
+      data-reveal
+      style="display:inline-flex; align-items:center; gap:8px; font-size:13px; color:#9ef27a; letter-spacing:0.03em; margin-bottom:24px; border:1px solid rgba(158,242,122,0.25); padding:7px 16px 7px 8px; border-radius:100px; background:rgba(158,242,122,0.06);"
+    >
+      <span
+        style="width:6px; height:6px; border-radius:50%; background:#9ef27a; box-shadow:0 0 8px #9ef27a; display:block;"
+      ></span>The technology
+    </div>
+    <h1
+      data-reveal
+      style="font-family:'Fraunces',serif; font-size:clamp(38px,5.4vw,60px); font-weight:500; letter-spacing:-0.02em; line-height:1.06; margin-bottom:24px; max-width:900px; margin-left:auto; margin-right:auto;"
+    >
+      Solid-sorbent direct air capture, measured <em style="font-style:italic; color:#9ef27a;"
+        >molecule by molecule</em
+      >
+    </h1>
+    <p data-reveal style="font-size:18px; color:#a9a79d; max-width:600px; margin:0 auto;">
+      A continuous, electrified capture cycle designed for durability of storage and
+      defensibility of data. This is the full engineering picture — no black boxes.
+    </p>
+  </section>
+
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:20px 64px 40px;">
+    <div
+      data-reveal
+      style="position:relative; height:min(40vw,360px); border-radius:20px; overflow:hidden; border:1px solid rgba(255,255,255,0.1);"
+    >
+      <img
+        src="https://images.pexels.com/videos/29941033/solar-power-29941033.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        alt="Renewable-powered Terravault facility"
+        style="width:100%; height:100%; object-fit:cover; filter:saturate(0.85) brightness(0.66);"
+        onerror="this.style.display='none'"
+      />
+      <div
+        style="position:absolute; inset:0; background:linear-gradient(180deg,rgba(9,11,9,0.1) 30%,rgba(9,11,9,0.85) 100%), linear-gradient(90deg,rgba(9,11,9,0.55) 0%,transparent 45%);"
+      >
+      </div>
+      <div
+        style="position:absolute; bottom:26px; left:30px; font-size:13.5px; color:#e5e3db; background:rgba(9,11,9,0.5); backdrop-filter:blur(6px); padding:9px 16px; border-radius:100px; border:1px solid rgba(255,255,255,0.12); display:flex; align-items:center; gap:8px;"
+      >
+        <span
+          style="width:6px; height:6px; border-radius:50%; background:#9ef27a; box-shadow:0 0 8px #9ef27a; display:block;"
+        ></span>Clean-energy powered · Facility 04, Pilbara
+      </div>
+    </div>
+  </section>
+
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:60px 64px;">
+    <div data-reveal style="margin-bottom:40px;">
+      <div style="font-size:13px; color:#9ef27a; letter-spacing:0.05em; margin-bottom:14px; font-weight:600;">
+        Process schematic
+      </div>
+      <h2 style="font-family:'Fraunces',serif; font-size:clamp(28px,3.6vw,38px); font-weight:500; letter-spacing:-0.01em;">
+        The capture cycle, end to end
+      </h2>
+    </div>
+    <div
+      data-reveal
+      style="border:1px solid rgba(255,255,255,0.08); border-radius:20px; background:linear-gradient(160deg,#0f130d,#0b0d0b); padding:44px 40px;"
+    >
+      <div class="tv-split" style="display:grid; grid-template-columns:repeat(5,1fr); gap:0; align-items:stretch;">
+        <div style="display:flex; flex-direction:column; gap:14px; padding-right:20px; position:relative;">
+          <div style="font-family:'Fraunces',serif; font-size:13px; color:#9ef27a; letter-spacing:0.08em;">01</div>
+          <div style="height:64px; border-radius:12px; border:1px solid rgba(158,242,122,0.25); background:rgba(158,242,122,0.06); display:flex; align-items:center; justify-content:center; font-size:24px;">≋</div>
+          <div style="font-size:14.5px; font-weight:700;">Air intake</div>
+          <div style="font-size:12.5px; color:#918f86;">Ambient air drawn through contactor arrays at ~415 ppm CO&#8322;.</div>
+          <div class="tv-schematic-arrow" style="position:absolute; right:-1px; top:44px; color:#3d443a; font-size:20px;">→</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:14px; padding:0 20px; position:relative;">
+          <div style="font-family:'Fraunces',serif; font-size:13px; color:#9ef27a; letter-spacing:0.08em;">02</div>
+          <div style="height:64px; border-radius:12px; border:1px solid rgba(158,242,122,0.25); background:rgba(158,242,122,0.06); display:flex; align-items:center; justify-content:center; font-size:24px;">▦</div>
+          <div style="font-size:14.5px; font-weight:700;">Sorbent binding</div>
+          <div style="font-size:12.5px; color:#918f86;">Amine-functionalized sorbent chemically binds CO&#8322; at the surface.</div>
+          <div class="tv-schematic-arrow" style="position:absolute; right:-1px; top:44px; color:#3d443a; font-size:20px;">→</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:14px; padding:0 20px; position:relative;">
+          <div style="font-family:'Fraunces',serif; font-size:13px; color:#9ef27a; letter-spacing:0.08em;">03</div>
+          <div style="height:64px; border-radius:12px; border:1px solid rgba(158,242,122,0.25); background:rgba(158,242,122,0.06); display:flex; align-items:center; justify-content:center; font-size:24px;">♨</div>
+          <div style="font-size:14.5px; font-weight:700;">Thermal release</div>
+          <div style="font-size:12.5px; color:#918f86;">Waste heat at 95&deg;C regenerates sorbent, freeing concentrated CO&#8322;.</div>
+          <div class="tv-schematic-arrow" style="position:absolute; right:-1px; top:44px; color:#3d443a; font-size:20px;">→</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:14px; padding:0 20px; position:relative;">
+          <div style="font-family:'Fraunces',serif; font-size:13px; color:#9ef27a; letter-spacing:0.08em;">04</div>
+          <div style="height:64px; border-radius:12px; border:1px solid rgba(158,242,122,0.25); background:rgba(158,242,122,0.06); display:flex; align-items:center; justify-content:center; font-size:24px;">◆</div>
+          <div style="font-size:14.5px; font-weight:700;">Compression</div>
+          <div style="font-size:12.5px; color:#918f86;">Stream dried and compressed to 150 bar for pipeline transport.</div>
+          <div class="tv-schematic-arrow" style="position:absolute; right:-1px; top:44px; color:#3d443a; font-size:20px;">→</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:14px; padding-left:20px;">
+          <div style="font-family:'Fraunces',serif; font-size:13px; color:#9ef27a; letter-spacing:0.08em;">05</div>
+          <div style="height:64px; border-radius:12px; border:1px solid rgba(158,242,122,0.4); background:rgba(158,242,122,0.12); display:flex; align-items:center; justify-content:center; font-size:24px;">⬢</div>
+          <div style="font-size:14.5px; font-weight:700;">Mineralization</div>
+          <div style="font-size:12.5px; color:#918f86;">Injected into basalt; carbonates within 24 months. Permanent.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:60px 64px;">
+    <div data-reveal style="margin-bottom:40px; max-width:640px;">
+      <div style="font-size:13px; color:#9ef27a; letter-spacing:0.05em; margin-bottom:14px; font-weight:600;">
+        Energy &amp; mass balance
+      </div>
+      <h2 style="font-family:'Fraunces',serif; font-size:clamp(28px,3.6vw,38px); font-weight:500; letter-spacing:-0.01em; margin-bottom:14px;">
+        What it takes to remove one ton
+      </h2>
+      <p style="color:#a9a79d; font-size:16px;">
+        Per verified ton of CO&#8322; permanently stored, measured across the full facility
+        boundary.
+      </p>
+    </div>
+    <div data-reveal class="tv-split" style="display:grid; grid-template-columns:repeat(2,1fr); gap:20px;">
+      <div
+        style="border:1px solid rgba(255,255,255,0.08); border-radius:16px; background:linear-gradient(160deg,#12160f,#0d100e); padding:32px;"
+      >
+        <div style="font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em; color:#918f86; margin-bottom:24px;">
+          Energy inputs / ton
+        </div>
+        <div style="display:flex; flex-direction:column; gap:18px;">
+          <div>
+            <div style="display:flex; justify-content:space-between; font-size:14px; margin-bottom:8px;">
+              <span>Thermal (waste heat)</span><span style="color:#9ef27a; font-weight:700;">1,450 kWh</span>
+            </div>
+            <div style="height:6px; border-radius:4px; background:rgba(255,255,255,0.07);">
+              <div style="width:78%; height:100%; border-radius:4px; background:linear-gradient(90deg,#1d9e75,#9ef27a);"></div>
+            </div>
+          </div>
+          <div>
+            <div style="display:flex; justify-content:space-between; font-size:14px; margin-bottom:8px;">
+              <span>Electrical (fans, pumps)</span><span style="color:#9ef27a; font-weight:700;">280 kWh</span>
+            </div>
+            <div style="height:6px; border-radius:4px; background:rgba(255,255,255,0.07);">
+              <div style="width:24%; height:100%; border-radius:4px; background:linear-gradient(90deg,#1d9e75,#9ef27a);"></div>
+            </div>
+          </div>
+          <div>
+            <div style="display:flex; justify-content:space-between; font-size:14px; margin-bottom:8px;">
+              <span>Compression &amp; injection</span><span style="color:#9ef27a; font-weight:700;">120 kWh</span>
+            </div>
+            <div style="height:6px; border-radius:4px; background:rgba(255,255,255,0.07);">
+              <div style="width:12%; height:100%; border-radius:4px; background:linear-gradient(90deg,#1d9e75,#9ef27a);"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="margin-top:24px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.07); display:flex; justify-content:space-between; font-size:15px; font-weight:700;"
+        >
+          <span>Net energy / ton</span><span style="font-family:'Fraunces',serif; color:#f4f2ec;">1,850 kWh</span>
+        </div>
+      </div>
+      <div
+        style="border:1px solid rgba(255,255,255,0.08); border-radius:16px; background:linear-gradient(160deg,#12160f,#0d100e); padding:32px;"
+      >
+        <div style="font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em; color:#918f86; margin-bottom:24px;">
+          Carbon accounting / ton
+        </div>
+        <div style="display:flex; flex-direction:column; gap:16px; font-size:14px;">
+          <div style="display:flex; justify-content:space-between; padding-bottom:14px; border-bottom:1px solid rgba(255,255,255,0.06);">
+            <span style="color:#a9a79d;">Gross CO&#8322; captured</span><span style="font-weight:700;">1.000 t</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; padding-bottom:14px; border-bottom:1px solid rgba(255,255,255,0.06);">
+            <span style="color:#a9a79d;">Grid &amp; process emissions</span><span style="font-weight:700; color:#e0956b;">− 0.11 t</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; padding-bottom:14px; border-bottom:1px solid rgba(255,255,255,0.06);">
+            <span style="color:#a9a79d;">Transport &amp; injection</span><span style="font-weight:700; color:#e0956b;">− 0.02 t</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; padding-top:6px;">
+            <span style="font-weight:700;">Net durable removal</span><span style="font-family:'Fraunces',serif; font-size:22px; color:#9ef27a;">0.87 t</span>
+          </div>
+        </div>
+        <div style="margin-top:24px; font-size:12.5px; color:#6b6960; line-height:1.5;">
+          Net removal ratio of 0.87 verified under the Isometric DAC + Storage protocol.
+          Emissions boundary includes upstream energy generation.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:60px 64px;">
+    <div data-reveal style="margin-bottom:40px; max-width:640px;">
+      <div style="font-size:13px; color:#9ef27a; letter-spacing:0.05em; margin-bottom:14px; font-weight:600;">
+        Performance
+      </div>
+      <h2 style="font-family:'Fraunces',serif; font-size:clamp(28px,3.6vw,38px); font-weight:500; letter-spacing:-0.01em;">
+        Cost is falling as the fleet scales
+      </h2>
+    </div>
+    <div data-reveal class="tv-split" style="display:grid; grid-template-columns:1.5fr 1fr; gap:20px;">
+      <div
+        style="border:1px solid rgba(255,255,255,0.08); border-radius:16px; background:linear-gradient(160deg,#0f130d,#0b0d0b); padding:32px;"
+      >
+        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:28px;">
+          <div style="font-size:14px; color:#918f86;">Cost per ton, $ · by facility generation</div>
+          <div style="font-size:12.5px; color:#6b6960;">2021 → 2026</div>
+        </div>
+        <div style="display:flex; align-items:flex-end; gap:22px; height:180px;">
+          <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:10px; height:100%; justify-content:flex-end;">
+            <div style="font-size:12px; color:#a9a79d;">$620</div>
+            <div style="width:100%; background:rgba(255,255,255,0.08); border-radius:6px 6px 0 0; height:100%;"></div>
+            <div style="font-size:11.5px; color:#6b6960;">Gen 1</div>
+          </div>
+          <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:10px; height:100%; justify-content:flex-end;">
+            <div style="font-size:12px; color:#a9a79d;">$410</div>
+            <div style="width:100%; background:rgba(255,255,255,0.12); border-radius:6px 6px 0 0; height:66%;"></div>
+            <div style="font-size:11.5px; color:#6b6960;">Gen 2</div>
+          </div>
+          <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:10px; height:100%; justify-content:flex-end;">
+            <div style="font-size:12px; color:#a9a79d;">$180</div>
+            <div style="width:100%; background:linear-gradient(180deg,#9ef27a,#1d9e75); border-radius:6px 6px 0 0; height:29%;"></div>
+            <div style="font-size:11.5px; color:#9ef27a;">Gen 3</div>
+          </div>
+          <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:10px; height:100%; justify-content:flex-end;">
+            <div style="font-size:12px; color:#6b6960;">$95</div>
+            <div style="width:100%; background:repeating-linear-gradient(135deg,rgba(158,242,122,0.25),rgba(158,242,122,0.25) 6px,transparent 6px,transparent 12px); border:1px dashed rgba(158,242,122,0.4); border-radius:6px 6px 0 0; height:15%;"></div>
+            <div style="font-size:11.5px; color:#6b6960;">Gen 4 ·&nbsp;target</div>
+          </div>
+        </div>
+      </div>
+      <div
+        style="border:1px solid rgba(255,255,255,0.08); border-radius:16px; background:linear-gradient(160deg,#12160f,#0d100e); padding:32px; display:flex; flex-direction:column; justify-content:center; gap:26px;"
+      >
+        <div>
+          <div style="font-family:'Fraunces',serif; font-size:40px; color:#9ef27a; letter-spacing:-0.01em;">71%</div>
+          <div style="font-size:13.5px; color:#918f86; margin-top:6px;">Cost reduction Gen 1 → Gen 3</div>
+        </div>
+        <div>
+          <div style="font-family:'Fraunces',serif; font-size:40px; color:#f4f2ec; letter-spacing:-0.01em;">2.1&times;</div>
+          <div style="font-size:13.5px; color:#918f86; margin-top:6px;">Throughput per module vs Gen 1</div>
+        </div>
+        <div>
+          <div style="font-family:'Fraunces',serif; font-size:40px; color:#f4f2ec; letter-spacing:-0.01em;">&lt; 2 yr</div>
+          <div style="font-size:13.5px; color:#918f86; margin-top:6px;">Mineralization to permanence</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:20px 64px 40px;">
+    <div
+      data-reveal
+      style="position:relative; height:min(44vw,400px); border-radius:20px; overflow:hidden; border:1px solid rgba(255,255,255,0.1);"
+    >
+      <img
+        src="https://images.pexels.com/photos/10432218/pexels-photo-10432218.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        alt="Instrumented pipework"
+        style="width:100%; height:100%; object-fit:cover; filter:saturate(0.82) brightness(0.62);"
+        onerror="this.style.display='none'"
+      />
+      <div
+        style="position:absolute; inset:0; background:linear-gradient(180deg,rgba(9,11,9,0.18) 25%,rgba(9,11,9,0.82) 100%), linear-gradient(90deg,rgba(9,11,9,0.5) 0%,transparent 52%);"
+      >
+      </div>
+      <div style="position:absolute; bottom:28px; left:32px; max-width:520px;">
+        <div style="font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em; color:#9ef27a; margin-bottom:8px;">
+          Instrumentation
+        </div>
+        <div style="font-family:'Fraunces',serif; font-size:clamp(18px,2.2vw,26px); color:#f4f2ec; line-height:1.35;">
+          Every vessel and valve is a measurement point.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:60px 64px;">
+    <div data-reveal style="margin-bottom:40px; max-width:640px;">
+      <div style="font-size:13px; color:#9ef27a; letter-spacing:0.05em; margin-bottom:14px; font-weight:600;">
+        Facility specification
+      </div>
+      <h2 style="font-family:'Fraunces',serif; font-size:clamp(28px,3.6vw,38px); font-weight:500; letter-spacing:-0.01em;">
+        Gen 3 module, at a glance
+      </h2>
+    </div>
+    <div data-reveal style="border:1px solid rgba(255,255,255,0.08); border-radius:16px; overflow:hidden;">
+      <div class="tv-split" style="display:grid; grid-template-columns:1fr 1fr; gap:1px; background:rgba(255,255,255,0.07);">
+        <div style="background:#0d100e; padding:22px 28px; display:flex; justify-content:space-between; font-size:14.5px;"><span style="color:#918f86;">Nameplate capacity</span><span style="font-weight:700;">1,000 t CO&#8322; / yr</span></div>
+        <div style="background:#0d100e; padding:22px 28px; display:flex; justify-content:space-between; font-size:14.5px;"><span style="color:#918f86;">Footprint per module</span><span style="font-weight:700;">140 m&sup2;</span></div>
+        <div style="background:#0d100e; padding:22px 28px; display:flex; justify-content:space-between; font-size:14.5px;"><span style="color:#918f86;">Sorbent type</span><span style="font-weight:700;">Amine-functionalized solid</span></div>
+        <div style="background:#0d100e; padding:22px 28px; display:flex; justify-content:space-between; font-size:14.5px;"><span style="color:#918f86;">Regeneration temp.</span><span style="font-weight:700;">95 &deg;C</span></div>
+        <div style="background:#0d100e; padding:22px 28px; display:flex; justify-content:space-between; font-size:14.5px;"><span style="color:#918f86;">Energy source</span><span style="font-weight:700;">Geothermal + solar PPA</span></div>
+        <div style="background:#0d100e; padding:22px 28px; display:flex; justify-content:space-between; font-size:14.5px;"><span style="color:#918f86;">Storage medium</span><span style="font-weight:700;">Basalt mineralization</span></div>
+        <div style="background:#0d100e; padding:22px 28px; display:flex; justify-content:space-between; font-size:14.5px;"><span style="color:#918f86;">Cycle time</span><span style="font-weight:700;">3.5 hours</span></div>
+        <div style="background:#0d100e; padding:22px 28px; display:flex; justify-content:space-between; font-size:14.5px;"><span style="color:#918f86;">Modularity</span><span style="font-weight:700;">Stackable to 50 MW blocks</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:60px 64px 40px;">
+    <div data-reveal class="tv-split" style="display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center;">
+      <div>
+        <div style="font-size:13px; color:#9ef27a; letter-spacing:0.05em; margin-bottom:14px; font-weight:600;">
+          MRV methodology
+        </div>
+        <h2 style="font-family:'Fraunces',serif; font-size:clamp(26px,3.4vw,36px); font-weight:500; letter-spacing:-0.01em; margin-bottom:18px;">
+          Every ton is measured, reported, and verified — not modeled
+        </h2>
+        <p style="color:#a9a79d; font-size:16px; margin-bottom:20px;">
+          CO&#8322; flow is metered continuously at capture and injection. Third-party auditors
+          reconcile the two, subtract lifecycle emissions, and issue credits only against net
+          durable removal.
+        </p>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div style="display:flex; gap:12px; align-items:flex-start;"><span style="color:#9ef27a; font-weight:700; margin-top:1px;">✓</span><span style="font-size:14.5px; color:#c8c6bd;">Continuous flow metering at both capture and injection points</span></div>
+          <div style="display:flex; gap:12px; align-items:flex-start;"><span style="color:#9ef27a; font-weight:700; margin-top:1px;">✓</span><span style="font-size:14.5px; color:#c8c6bd;">Independent lifecycle assessment across the full facility boundary</span></div>
+          <div style="display:flex; gap:12px; align-items:flex-start;"><span style="color:#9ef27a; font-weight:700; margin-top:1px;">✓</span><span style="font-size:14.5px; color:#c8c6bd;">Seismic and geochemical monitoring of injection reservoirs</span></div>
+        </div>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,0.08); border-radius:16px; background:linear-gradient(160deg,#12160f,#0d100e); padding:36px;">
+        <div style="font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em; color:#918f86; margin-bottom:24px;">
+          Certifications &amp; standards
+        </div>
+        <div style="display:flex; flex-direction:column; gap:0;">
+          <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 0; border-bottom:1px solid rgba(255,255,255,0.06);"><span style="font-weight:600; font-size:15px;">Isometric</span><span style="font-size:12.5px; color:#9ef27a; padding:4px 12px; border-radius:100px; background:rgba(158,242,122,0.1);">Certified</span></div>
+          <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 0; border-bottom:1px solid rgba(255,255,255,0.06);"><span style="font-weight:600; font-size:15px;">Puro.earth CO&#8322; Removal</span><span style="font-size:12.5px; color:#9ef27a; padding:4px 12px; border-radius:100px; background:rgba(158,242,122,0.1);">Certified</span></div>
+          <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 0; border-bottom:1px solid rgba(255,255,255,0.06);"><span style="font-weight:600; font-size:15px;">45Q tax credit eligible</span><span style="font-size:12.5px; color:#9ef27a; padding:4px 12px; border-radius:100px; background:rgba(158,242,122,0.1);">Qualified</span></div>
+          <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 0;"><span style="font-weight:600; font-size:15px;">ISO 14064-2 GHG</span><span style="font-size:12.5px; color:#9ef27a; padding:4px 12px; border-radius:100px; background:rgba(158,242,122,0.1);">Conformant</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    data-reveal
+    class="tv-container"
+    style="text-align:center; padding:120px 64px; background:radial-gradient(ellipse 60% 60% at 50% 50%, rgba(158,242,122,0.08), transparent 70%);"
+  >
+    <h2 style="font-family:'Fraunces',serif; font-size:clamp(30px,4.4vw,44px); font-weight:500; letter-spacing:-0.01em; margin-bottom:16px;">
+      Want the full methodology?
+    </h2>
+    <p style="color:#a9a79d; max-width:480px; margin:0 auto 40px;">
+      Our complete MRV protocol, sensor calibration logs, and reservoir monitoring data are
+      available to evaluators under NDA.
+    </p>
+    <a
+      href="/data-room"
+      class="btn-primary"
+      style="display:inline-block; background:linear-gradient(135deg,#b4f792,#1d9e75); color:#06210f; padding:15px 30px; border-radius:100px; font-weight:700; font-size:15px;"
+      >Request the data room</a
+    >
+  </section>
+</BaseLayout>

@@ -1,0 +1,138 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const slots = [
+  { day: 'Tue 12 Aug', time: '10:00' },
+  { day: 'Tue 12 Aug', time: '13:30' },
+  { day: 'Tue 12 Aug', time: '16:00' },
+  { day: 'Wed 13 Aug', time: '09:30' },
+  { day: 'Wed 13 Aug', time: '12:00' },
+  { day: 'Wed 13 Aug', time: '15:30' },
+  { day: 'Thu 14 Aug', time: '11:00' },
+  { day: 'Thu 14 Aug', time: '14:00' },
+  { day: 'Thu 14 Aug', time: '16:30' },
+];
+---
+
+<BaseLayout
+  title="Book a consult — Terravault"
+  description="Let's talk about your removal target."
+>
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:88px 64px 40px;">
+    <div data-reveal style="max-width:720px;">
+      <div
+        style="display:inline-flex; align-items:center; gap:8px; font-size:13px; color:#9ef27a; letter-spacing:0.03em; margin-bottom:22px; border:1px solid rgba(158,242,122,0.25); padding:7px 16px 7px 8px; border-radius:100px; background:rgba(158,242,122,0.06);"
+      >
+        <span
+          style="width:6px; height:6px; border-radius:50%; background:#9ef27a; box-shadow:0 0 8px #9ef27a; display:block;"
+        ></span>Book a consult
+      </div>
+      <h1
+        style="font-family:'Fraunces',serif; font-size:clamp(38px,5.4vw,58px); font-weight:500; letter-spacing:-0.02em; line-height:1.06; margin-bottom:22px;"
+      >
+        Let's talk about <em style="font-style:italic; color:#9ef27a;">your removal target</em>
+      </h1>
+      <p style="font-size:18px; color:#a9a79d; max-width:600px;">
+        A 30-minute call with our offtake team. Pick a time and tell us what you're evaluating
+        — we'll come prepared with numbers, not a pitch.
+      </p>
+    </div>
+  </section>
+
+  <section class="tv-container" style="max-width:1280px; margin:0 auto; padding:20px 64px 100px;">
+    <div data-reveal class="tv-split" style="display:grid; grid-template-columns:0.9fr 1.1fr; gap:24px; align-items:start;">
+      <div
+        style="border:1px solid rgba(255,255,255,0.08); border-radius:20px; background:linear-gradient(160deg,#12160f,#0b0d0b); padding:40px;"
+      >
+        <div style="font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em; color:#9ef27a; margin-bottom:22px;">
+          What to expect
+        </div>
+        <div style="display:flex; flex-direction:column; gap:22px; margin-bottom:32px;">
+          <div style="display:flex; gap:14px;"><span style="font-family:'Fraunces',serif; color:#9ef27a; font-size:20px;">01</span><div><div style="font-size:15.5px; font-weight:600; margin-bottom:4px;">Scoping, not selling</div><p style="color:#918f86; font-size:14px;">We align on your target volume, timeline, and reporting standards.</p></div></div>
+          <div style="display:flex; gap:14px;"><span style="font-family:'Fraunces',serif; color:#9ef27a; font-size:20px;">02</span><div><div style="font-size:15.5px; font-weight:600; margin-bottom:4px;">The real numbers</div><p style="color:#918f86; font-size:14px;">Indicative pricing, the 0.87 net ratio, and how our MRV holds up in diligence.</p></div></div>
+          <div style="display:flex; gap:14px;"><span style="font-family:'Fraunces',serif; color:#9ef27a; font-size:20px;">03</span><div><div style="font-size:15.5px; font-weight:600; margin-bottom:4px;">A clear next step</div><p style="color:#918f86; font-size:14px;">If it's a fit, we open the data room under NDA within a day.</p></div></div>
+        </div>
+        <div style="padding-top:24px; border-top:1px solid rgba(255,255,255,0.08); display:flex; flex-direction:column; gap:12px;">
+          <div style="display:flex; gap:10px; align-items:center; font-size:14px; color:#c8c6bd;"><span style="color:#9ef27a;">→</span>offtake@terravault.example</div>
+          <div style="display:flex; gap:10px; align-items:center; font-size:14px; color:#c8c6bd;"><span style="color:#9ef27a;">→</span>Prefer email? Reply anytime, we answer in 2 business days.</div>
+        </div>
+      </div>
+
+      <div
+        style="border:1px solid rgba(255,255,255,0.08); border-radius:20px; background:linear-gradient(160deg,#0f130d,#0b0d0b); padding:40px;"
+      >
+        <div data-confirm-panel style="display:none; text-align:center; padding:40px 12px;">
+          <div style="width:56px; height:56px; border-radius:50%; background:rgba(158,242,122,0.12); display:flex; align-items:center; justify-content:center; margin:0 auto 22px; color:#9ef27a; font-size:26px;">✓</div>
+          <h2 style="font-family:'Fraunces',serif; font-size:26px; font-weight:500; margin-bottom:12px;">Request sent</h2>
+          <p data-confirm-text style="color:#a9a79d; font-size:15px; max-width:360px; margin:0 auto;"></p>
+        </div>
+        <div data-form-panel>
+          <div style="font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em; color:#918f86; margin-bottom:16px;">
+            Pick a time (30 min · your timezone)
+          </div>
+          <div class="tv-grid-2" style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-bottom:28px;">
+            {
+              slots.map((s) => (
+                <div class="slot-chip" data-slot data-day={s.day} data-time={s.time}>
+                  <div class="slot-day">{s.day}</div>
+                  <div class="slot-time">{s.time}</div>
+                </div>
+              ))
+            }
+          </div>
+          <div style="display:flex; flex-direction:column; gap:14px;">
+            <div class="tv-split" style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+              <input class="form-input" placeholder="Full name" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:14px 16px; color:#f4f2ec; font-size:14.5px; outline:none;" />
+              <input class="form-input" placeholder="Company" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:14px 16px; color:#f4f2ec; font-size:14.5px; outline:none;" />
+            </div>
+            <input class="form-input" placeholder="Work email" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:14px 16px; color:#f4f2ec; font-size:14.5px; outline:none;" />
+            <textarea class="form-input" placeholder="What are you evaluating? (target volume, timeline)" rows="3" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:14px 16px; color:#f4f2ec; font-size:14.5px; outline:none; resize:vertical;"></textarea>
+            <button type="button" data-submit class="submit-btn">Select a time above</button>
+            <div style="font-size:12px; color:#6b6960; text-align:center;">
+              Uses a placeholder scheduler — drop in your Calendly or HubSpot embed here.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const chips = document.querySelectorAll<HTMLElement>('[data-slot]');
+    const submitBtn = document.querySelector<HTMLButtonElement>('[data-submit]');
+    const formPanel = document.querySelector<HTMLElement>('[data-form-panel]');
+    const confirmPanel = document.querySelector<HTMLElement>('[data-confirm-panel]');
+    const confirmText = document.querySelector<HTMLElement>('[data-confirm-text]');
+
+    let selected: { day: string; time: string } | null = null;
+
+    function updateSubmit() {
+      if (!submitBtn) return;
+      if (selected) {
+        submitBtn.textContent = `Confirm ${selected.day} · ${selected.time}`;
+        submitBtn.classList.add('is-enabled');
+      } else {
+        submitBtn.textContent = 'Select a time above';
+        submitBtn.classList.remove('is-enabled');
+      }
+    }
+
+    chips.forEach((chip) => {
+      chip.addEventListener('click', () => {
+        chips.forEach((c) => c.classList.remove('is-selected'));
+        chip.classList.add('is-selected');
+        selected = { day: chip.dataset.day ?? '', time: chip.dataset.time ?? '' };
+        updateSubmit();
+      });
+    });
+
+    submitBtn?.addEventListener('click', () => {
+      if (!selected || !formPanel || !confirmPanel || !confirmText) return;
+      confirmText.innerHTML = `Thanks — we've pencilled in <span style="color:#9ef27a;">${selected.day} at ${selected.time}</span>. You'll get a calendar invite and a short confirmation by email shortly.`;
+      formPanel.style.display = 'none';
+      confirmPanel.style.display = 'block';
+    });
+
+    updateSubmit();
+  </script>
+</BaseLayout>

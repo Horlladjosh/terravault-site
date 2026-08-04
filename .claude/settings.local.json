@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(unzip -l \"/Users/macbook/Downloads/terravault-site/Climatetech Marketing Template System.zip\")",
+      "Bash(npm -v)",
+      "Bash(npm install *)",
+      "Bash(npx astro *)",
+      "Bash(npm run *)",
+      "Bash(python3 -c ' *)",
+      "Bash(awk -F: '{sum+=$2; print} END {print \"TOTAL:\", sum}')",
+      "Bash(lsof -ti:4321)",
+      "Bash(xargs -r kill)"
+    ]
+  }
+}
